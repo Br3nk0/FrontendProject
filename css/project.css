@@ -1,0 +1,163 @@
+
+@font-face {
+    font-family: UltimaItalic;
+    src: url('../Fonts/UltimaPDad-UltraLightItalic.ttf');
+}
+
+body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+body{
+    width:100vw;
+    height:100vh;
+    font-size:100em;
+}
+#mainNav{
+    height:8vh;
+    background-color:#4ca297;
+}
+#Intro{
+    background-color:#cab9a7;
+    height:87.7vh;
+    border-bottom: 0.3vh dashed white;
+}
+#mainFooter{
+    height:4vh;
+    background-color:#f2595b;
+}
+h1{
+    margin-left:33vw;
+}
+#Start{
+    display:block;
+    background-color: #4ca297;
+    width:33.333vw;
+    height:8vh;
+    margin-left:33.333vw;
+    margin-top:8vh;
+}
+#Start > p{
+    text-align: center;
+    padding-top: 0.75vh;
+    font-family: UltimaItalic;
+    font-size:5vh;
+    color:white;
+}
+#menuNav{
+    box-shadow: none;
+    border:none;
+}
+#menu{
+
+    margin-left:1.2vw;
+    margin-top:-1vh;
+    background-color: #4ca297;
+    border:none;
+    box-shadow: none;
+    outline-color:#4ca297 ;
+    color:white;
+    font-size:2em;
+
+}
+#dropdownMenu{
+    margin-left:1vw;
+    margin-top:-1vh;
+
+}
+#home{
+    display:inline-block;;
+    width:12vw;
+    font-size:1.2vh;
+    margin-left:82vw;
+    color:white;
+    margin-top:2vh;
+
+}
+#home img{
+    margin-left:1vw;
+    margin-top:-4vh;
+    width:4vw;
+    height:7vh;
+}
+
+#home > p{
+    display: inline-block;
+    width:7vw;
+    text-align: right;
+}
+#pc{
+    margin-left:25vw;
+    width:12vw;
+    height:22vh;
+    margin-top:-12vh;
+}
+#title{
+    display:inline-block;
+    font-size:7.9vh;
+    margin-left:2vw;
+    margin-top:16vh;
+    color:#f2595b;
+
+}
+#title > span{
+    font-size:6.6vh;
+    display: block;
+}
+#tekst{
+    width:70vw;
+    margin-left:15vw;
+    margin-top:10vh;
+    border-top:2px solid white;
+}
+#tekst > p{
+    font-family:UltimaItalic;
+    width:35vw;
+    font-size:2.5vh;
+    color:white;
+    text-align: center;
+    align-content: center;
+    margin-left:18vw;
+    margin-top:3vh;
+}
