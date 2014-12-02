@@ -1,14 +1,17 @@
 
 @font-face {
     font-family: UltimaItalic;
-    src: url('../Fonts/UltimaPDad-UltraLightItalic.ttf');
+    src: url('../Fonts/UltimaPDab-HairlineItalic.ttf');
 }
 
 @font-face {
     font-family: beauty;
     src: url('../Fonts/MonicasSalonNF.ttf');
 }
-
+@font-face{
+    font-family: UltimaLight;
+    src:url('../Fonts/UltimaPDac-UltraLight.ttf');
+}
 
 body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -56,22 +59,24 @@ table {
 
 
 body{
-    width:100vw;
+    width:99.1vw;
     height:100vh;
     font-size:100em;
 }
 #mainNav{
     height:8vh;
     background-color:#4ca297;
+    position:fixed;
 }
 #Intro{
     background-color:#cab9a7;
-    height:87.7vh;
-    border-bottom: 0.3vh dashed white;
+    height:300vh;
+
 }
 #mainFooter{
     height:4vh;
     background-color:#f2595b;
+    border-top: 0.3vh dashed white;
 }
 h1{
     margin-left:33vw;
@@ -84,6 +89,10 @@ h1{
     height:8vh;
     margin-left:33.333vw;
     margin-top:8vh;
+    text-decoration: none;
+}
+#Start > a{
+    text-decoration: none;
 }
 #Start > a > p{
     text-align: center;
@@ -91,43 +100,41 @@ h1{
     font-family: UltimaItalic;
     font-size:5vh;
     color:white;
-    text-decoration: none;
-    border:none;
-
+    font-weight: bold;
 }
 #menuNav{
     box-shadow: none;
     border:none;
 }
 #menu{
-
     margin-left:1.2vw;
-    margin-top:-1vh;
     background-color: #4ca297;
     border:none;
     box-shadow: none;
     outline-color:#4ca297 ;
     color:white;
     font-size:2em;
-
 }
 #dropdownMenu{
     margin-left:1vw;
     margin-top:-1vh;
 
 }
+#dropdownMenu > .active{
+    margin-left:1.7vh;
+}
 #home{
-    display:inline-block;;
+   display:block;
     width:12vw;
     font-size:1.2vh;
-    margin-left:82vw;
+    margin-left:85.5vw;
     color:white;
-    margin-top:2vh;
+    margin-top:-4vh;
 
 }
 #home img{
     margin-left:1vw;
-    margin-top:-4vh;
+    margin-top:-5.5vh;
     width:4vw;
     height:7vh;
 }
@@ -137,24 +144,30 @@ h1{
     width:7vw;
     text-align: right;
     font-family: beauty;
+    font-size:1.8vh;
+    margin-top:-0.5vh;
 }
 #pc{
-    margin-left:25vw;
+    margin-left:29vw;
     width:12vw;
     height:22vh;
-    margin-top:-12vh;
+    margin-top:-15vh;
 }
 #title{
     display:inline-block;
-    font-size:7.9vh;
+    font-size:10vh;
     margin-left:2vw;
-    margin-top:16vh;
+    margin-top:25vh;
     color:#f2595b;
     font-family: beauty;
+    font-weight: bold;
+    text-align: justify;
 
 }
+
 #title > span{
-    font-size:6.6vh;
+    font-size:7vh;
+    letter-spacing: 5px;
     display: block;
 }
 #tekst{
@@ -166,10 +179,58 @@ h1{
 #tekst > p{
     font-family:UltimaItalic;
     width:35vw;
-    font-size:2.5vh;
+    font-size:3vh;
     color:white;
     text-align: center;
     align-content: center;
     margin-left:18vw;
     margin-top:3vh;
+    font-weight: bold;
+}
+#Content{
+    height:1500vh;
+}
+.pc{
+    height:100vh;
+    background-color:#cab9a7;
+
+}
+.info{
+    margin-left:95vw;
+    margin-top:88.5vh;
+    width:3vw;
+    height:5vh;
+    background-color:#4ca297;
+    position:fixed;
+}
+.info:hover{
+    width:25vw;
+    height:50vh;
+    margin-left:73vw;
+    margin-top:43.5vh;
+    border-radius:10px;
+}
+#jaartallen{
+    width:75vw;
+    margin-left:5vw;
+    display: inline-block;
+    margin-top:1.5vh;
+}
+#jaartallen > li{
+    margin-top:1vh;
+    display: inline-block;
+    color:white;
+    font-size:2vh;
+    font-family:UltimaLight;
+    margin-right:2vw;
+}
+#jaartallen > li > a{
+    text-decoration: none;
+    color:white;
+}
+#jaartallen > li > a:hover{
+    font-weight: bold;
+}
+.activeli{
+    font-weight:bold;
 }

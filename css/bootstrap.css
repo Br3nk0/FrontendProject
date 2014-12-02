@@ -1065,7 +1065,7 @@ h6 .small,
 .h6 .small {
   font-size: 75%;
 }
-h1,
+/*h1,
 .h1 {
   font-size: 36px;
 }
@@ -1088,7 +1088,7 @@ h5,
 h6,
 .h6 {
   font-size: 12px;
-}
+}*/
 p {
   margin: 0 0 10px;
 }
