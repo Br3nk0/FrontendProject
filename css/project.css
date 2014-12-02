@@ -76,6 +76,7 @@ body{
 h1{
     margin-left:33vw;
 }
+
 #Start{
     display:block;
     background-color: #4ca297;
@@ -84,12 +85,15 @@ h1{
     margin-left:33.333vw;
     margin-top:8vh;
 }
-#Start > p{
+#Start > a > p{
     text-align: center;
     padding-top: 0.75vh;
     font-family: UltimaItalic;
     font-size:5vh;
     color:white;
+    text-decoration: none;
+    border:none;
+
 }
 #menuNav{
     box-shadow: none;
