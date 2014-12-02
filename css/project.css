@@ -4,6 +4,12 @@
     src: url('../Fonts/UltimaPDad-UltraLightItalic.ttf');
 }
 
+@font-face {
+    font-family: beauty;
+    src: url('../Fonts/MonicasSalonNF.ttf');
+}
+
+
 body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -126,6 +132,7 @@ h1{
     display: inline-block;
     width:7vw;
     text-align: right;
+    font-family: beauty;
 }
 #pc{
     margin-left:25vw;
@@ -139,6 +146,7 @@ h1{
     margin-left:2vw;
     margin-top:16vh;
     color:#f2595b;
+    font-family: beauty;
 
 }
 #title > span{
