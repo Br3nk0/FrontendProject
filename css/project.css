@@ -233,6 +233,11 @@ h1{
 #jaartallen > li > a:hover{
     font-weight: bold;
 }
-.activeli{
+a:hover{
     font-weight:bold;
 }
+a.active{
+    font-weight:bold;
+    border-bottom:2px solid white;
+}
+
