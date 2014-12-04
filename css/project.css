@@ -13,151 +13,89 @@
     src:url('../Fonts/UltimaPDac-UltraLight.ttf');
 }
 
-body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, menu, nav, section {
-    display: block;
-}
-body {
-    line-height: 1;
-}
-ol, ul {
-    list-style: none;
-}
-blockquote, q {
-    quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-    content: '';
-    content: none;
-}
-table {
-    border-collapse: collapse;
-    border-spacing: 0;
-}
-
-
 body{
-    width:99.1vw;
-    height:100vh;
-    font-size:100em;
+    width:100%;
+    font-size:1em;
+}
+
+#homePage{
+    width:100%;
+    height:3156px;
 }
 #mainNav{
-    height:8vh;
+    height:8%;
     background-color:#4ca297;
     position:fixed;
 }
 #Intro{
     background-color:#cab9a7;
-    height:300vh;
+    height:33.3333%;
 
 }
 #mainFooter{
-    height:4vh;
+    height:4%;
     background-color:#f2595b;
-    border-top: 0.3vh dashed white;
-}
-h1{
-    margin-left:33vw;
+    border-top: 3px dashed white;
 }
 
-#Start{
-    display:block;
-    background-color: #4ca297;
-    width:33.333vw;
-    height:8vh;
-    margin-left:33.333vw;
-    margin-top:8vh;
-    text-decoration: none;
-}
-#Start > a{
-    text-decoration: none;
-}
-#Start > a > p{
-    text-align: center;
-    padding-top: 0.75vh;
-    font-family: UltimaItalic;
-    font-size:5vh;
-    color:white;
-    font-weight: bold;
-}
 #menuNav{
     box-shadow: none;
     border:none;
 }
 #menu{
-    margin-left:1.2vw;
+    margin-left:50%;
+    margin-top:50%;
     background-color: #4ca297;
     border:none;
     box-shadow: none;
     outline-color:#4ca297 ;
     color:white;
-    font-size:2em;
+    font-size:3em;
 }
 #dropdownMenu{
-    margin-left:1vw;
-    margin-top:-1vh;
+    margin-left:50%;
+    margin-top:-25%;
 
 }
 #dropdownMenu > .active{
-    margin-left:1.7vh;
+    margin-left:12%;
 }
 #home{
-   display:block;
-    width:12vw;
-    font-size:1.2vh;
-    margin-left:85.5vw;
+    display:block;
+    width:12%;
+    font-size:1.5em;
+    margin-left:85.5%;
     color:white;
-    margin-top:-4vh;
+    margin-top:-2.4%;
 
 }
 #home img{
-    margin-left:1vw;
-    margin-top:-5.5vh;
-    width:4vw;
-    height:7vh;
+    margin-left:5%;
+    width:30%;
+    height:27%;
+    display: inline-block;
+    margin-top:-23.5%
 }
 
 #home > p{
     display: inline-block;
-    width:7vw;
+    width:50%;
     text-align: right;
     font-family: beauty;
-    font-size:1.8vh;
-    margin-top:-0.5vh;
+    font-size:1.2em;
+
 }
 #pc{
-    margin-left:29vw;
-    width:12vw;
-    height:22vh;
-    margin-top:-15vh;
+    margin-left:30%;
+    width:12%;
+    height:22%;
+    margin-top:-8.5%;
 }
 #title{
     display:inline-block;
-    font-size:10vh;
-    margin-left:2vw;
-    margin-top:25vh;
+    font-size:10em;
+    margin-left:2%;
+    margin-top:15%;
     color:#f2595b;
     font-family: beauty;
     font-weight: bold;
@@ -166,65 +104,92 @@ h1{
 }
 
 #title > span{
-    font-size:7vh;
+    font-size:0.7em;
     letter-spacing: 5px;
     display: block;
 }
+h1{
+    margin-left:33%;
+}
+
+#Start{
+    display:block;
+    background-color: #4ca297;
+    width:33.333%;
+    height:8%;
+    margin-left:33.333%;
+    margin-top:5%;
+    text-decoration: none;
+}
+#Start > a{
+    text-decoration: none;
+}
+#Start > a > p{
+    text-align: center;
+    padding-top: 3.5%;
+    font-family: UltimaItalic;
+    font-size:3em;
+    color:white;
+    font-weight: bold;
+}
 #tekst{
-    width:70vw;
-    margin-left:15vw;
-    margin-top:10vh;
+    width:70%;
+    margin-left:15%;
+    margin-top:5%;
     border-top:2px solid white;
 }
 #tekst > p{
     font-family:UltimaItalic;
-    width:35vw;
-    font-size:3vh;
+    width:45%;
+    font-size:3em;
     color:white;
     text-align: center;
     align-content: center;
-    margin-left:18vw;
-    margin-top:3vh;
+    margin-left:27.5%;
+    margin-top:3%;
     font-weight: bold;
 }
+#journeybody{
+    font-size:1em;
+}
 #Content{
-    height:1500vh;
+    height:15780px;
 }
 .pc{
-    height:100vh;
+    height:6.6666%;
     background-color:#cab9a7;
 
 }
 .info{
-    margin-left:95vw;
-    margin-top:88.5vh;
-    width:3vw;
-    height:5vh;
+    margin-left:95%;
+    margin-top:50%;
+    width:3%;
+    height:5%;
     background-color:#4ca297;
     position:fixed;
 }
 .info:hover{
-    width:25vw;
-    height:50vh;
-    margin-left:73vw;
-    margin-top:43.5vh;
+    width:25%;
+    height:50%;
+    margin-left:73%;
+    margin-top:25%;
     border-radius:10px;
 }
 
 
 #jaartallen{
-    width:75vw;
-    margin-left:5vw;
-    display: inline-block;
-    margin-top:1.5vh;
+    width:75%;
+    margin-left:15%;
+    display:block;
+    margin-top:-1.9%;
 }
 #jaartallen > li{
-    margin-top:1vh;
-    display: inline-block;
+
+    display:inline-block;
     color:white;
-    font-size:2vh;
+    font-size:2em;
     font-family:UltimaLight;
-    margin-right:2vw;
+    margin-right:2%;
 }
 #jaartallen > li > a{
     text-decoration: none;
