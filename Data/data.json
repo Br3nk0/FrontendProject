@@ -1,0 +1,107 @@
+[ {
+    "ID": "1971",
+    "Jaartal": "1971",
+    "Naam": "DataPoint 2200",
+    "Beschrijving":"The Datapoint 2200 was a mass-produced programmable terminal, designed by Computer Terminal Corporation (CTC). This so-called programmable terminal was equipped to perform any task a simple computer could, and exploited this fact by using their 2200s as standalone computer systems. The Datapoint 2200 had a built-in full-travel keyboard, a built-in 12-line, 80-column green screen monitor, and two 47 character-per-inch cassette tape drives each with 130 kB capacity." ,
+    "Afbeelding":"Images/datapoint.jpg"
+},
+    {
+        "ID": "1972",
+        "Jaartal": "1972",
+        "Naam": "HP 9830",
+        "Beschrijving":"The HP 9800 was a family of what were initially called programmable calculators and later desktop computers made by Hewlett-Packard. It ran on the BASIC Plus language, with five user-accessible ROM cartridge slots and the ability to print documents using the HP 9866 printer, which seamlessly sat on top of the machine. HP 9830s were commonly employed at aerospace companies such as Boeing. They were also used by some schools such as Renton, Washington, which used pencil mark-sense cards with card readers to accommodate classroom use." ,
+        "Afbeelding":"Images/HP9830.jpg"
+    },
+    {
+        "ID": "1973",
+        "Jaartal": "1973",
+        "Naam": "Xerox Alto",
+        "Beschrijving":"The Xerox Alto was one of the first personal computers, a general purpose computer designed for individual use (although not as a home computer). However it was expensive and, unlike modern personal computers, not based on a microprocessor. It was developed at Xerox PARC and released on March 1, 1973. It was the first computer to use a desktop metaphor first commercialized on the later Xerox Star, and one of the first with a mouse-driven graphical user interface (GUI) and several other innovations in user interfaces of the time. It was not a commercial product, but several thousand units were built and were heavily used at PARC, other Xerox facilities, and at several universities for many years." ,
+        "Afbeelding":"Images/Xerox.jpg"
+    },
+    {
+        "ID": "1977",
+        "Jaartal": "1977",
+        "Naam": "Apple II",
+        "Beschrijving":"The Apple II (styled as apple ] is an 8-bit home computer, one of the first highly successful mass-produced microcomputer products. It hit the market a year after its predecessor in 1977. Both technical prowess and aesthetics came on leaps and bounds from the first model, contributing to its overall huge success. New features included a colour display, internal expansion slots, a case and keyboard, although it still used the same processor found in the Apple I. " ,
+        "Afbeelding":"Images/AppleII.jpg"
+    },
+    {
+        "ID": "1979",
+        "Jaartal": "1979",
+        "Naam": "Atari 400/800",
+        "Beschrijving":"Simultaneously announced in December 1978, the Atari 400 and 800 targeted two different types of consumer. The 400 (pictured here) was designed with children in mind, featuring an advanced child-proof design with wipe-clean keyboard and single covered cartridge port. Various games could be played via cartridge, including Pac-Man, Donkey Kong and Asteroids. The 800 however was designed to resemble a type writer, boasting extra cartridge and expansion slots and a higher technical specification. " ,
+        "Afbeelding":"Images/Atari.jpg"
+    },
+    {
+        "ID": "1980",
+        "Jaartal": "1980",
+"Naam": "Apple III",
+"Beschrijving":"While reaping the rewards of the hugely successful Apple II, the technology giant set the wheels in motion for its successor, the Apple III or ///. This time they set their sights on the business environment, but despite running twice as fast as the Apple II it was largely considered a failure. Serious stability issues resulted in a required design overhaul, with existing machines being recalled and a revised model reintroduced the following autumn. Despite these continued efforts, the model was discontinued and the Apple III plus was dropped. " ,
+"Afbeelding":"Images/AppleIII.jpg"
+    },
+    {
+        "ID": "1981",
+        "Jaartal": "1981",
+        "Naam": "IBM PC",
+        "Beschrijving":"Introduced in August 1981, the IBM Personal Computer was a basic system intended for home use, built around the Intel 8086 processor and featuring cassette drives to load and store programs. The system wasn’t very powerful compared to other computers at the time and IBM questioned the profitability of microcomputers; despite this the IBM PC turned out to be highly successful. " ,
+        "Afbeelding":"Images/IbmPc.jpg"
+    },
+    {
+        "ID": "1983",
+        "Jaartal": "1983",
+        "Naam": "Apple Lisa",
+        "Beschrijving":"The Apple Lisa was the first personal computer that featured a Graphical User Interface, offering a visually driven experience where the user clicked on tiny pictures (icons) with a mouse. This heavily influenced the direction of future computers, substantially increasing user friendliness and increasing overall accessibility. Despite this, the Lisa experienced lack lustre sales figures due to its high price and limited software applications. " ,
+        "Afbeelding":"Images/AppleLisa.jpg"
+    },
+    {
+        "ID": "1987",
+        "Jaartal": "1987",
+        "Naam": "IBM Personal System 2",
+        "Beschrijving":"The Personal System/2 or PS/2 was IBM's third generation of personal computers released in 1987. It officially replaced the IBM PC, XT, AT, and PC Convertible in IBM's lineup. The PS/2 line was created by IBM in an attempt to recapture control of the PC market by introducing an advanced yet proprietary architecture. IBM's considerable market presence plus the reliability of the PS/2 ensured that the systems would sell in relatively large numbers, especially to large businesses. However the other major manufacturers balked at IBM's licensing terms to develop and sell compatible hardware, particularly as the demanded royalties were on a per machine basis." ,
+        "Afbeelding":"Images/PersonalSystem.jpg"
+    },
+    {
+        "ID": "1989",
+        "Jaartal": "1989",
+        "Naam": "Mac portable",
+        "Beschrijving":"The Macintosh Portable is Apple Inc.'s first battery-powered portable Macintosh personal computer. Released on September 20, 1989, it was received with excitement from most critics but consumer sales were quite low. It featured a fast, sharp, and expensive black and white active matrix LCD screen in a hinged design that covered the keyboard when the machine was not in use. The Portable was one of the early consumer laptops to employ an active matrix panel, and only the most expensive of the initial Powerbook line, the Powerbook 170, used one, due to the high cost. The cursor pointing function was handled by a built-in trackball that could be removed and located on either side of the keyboard. It used expensive SRAM in an effort to maximize battery life and to provide an instant on low power sleep mode. The machine was designed to be high-performance, at the cost of price and weight." ,
+        "Afbeelding":"Images/Macportable.jpg"
+    },
+    {
+        "ID": "1991",
+        "Jaartal": "1991",
+        "Naam": "Dell 325NC",
+        "Beschrijving":"In 1991 Dell introduced its first notebook with a colour screen, the 325NC. Powered by a 25MHz processor, the VGA display supported 16 colours at 640x480 or 256 colours at 320x200, and had a battery life of 3 hours. " ,
+        "Afbeelding":"Images/Dell325.jpg"
+    },
+    {
+        "ID": "1992",
+        "Jaartal": "1992",
+        "Naam": "Amiga 4000",
+        "Beschrijving":"The Amiga 4000 marks the end of the Amiga line, and easily surpassed all previous models due to its 25MHz processor and powerful AGA graphics chip. Due to its special HAM-8 display mode, the system could output 262,000 colours, although this compromised overall quality. " ,
+        "Afbeelding":"Images/Amiga.jpg"
+    },
+    {
+        "ID": "1998",
+        "Jaartal": "1998",
+        "Naam": "Imac",
+        "Beschrijving":"Apple announced the first model of the iMac line of computers back in 1998, merging both the monitor and hardware into a single enclosed unit. It was drastically different from other mainstream computers due to its translucent coloured plastic casing and curved edges. Aesthetics began to play a big part in the success of a system, not just what's inside." ,
+        "Afbeelding":"Images/Imac.jpg"
+    },
+    {
+        "ID": "2006",
+        "Jaartal": "2006",
+        "Naam": "Apple macbook",
+        "Beschrijving":"The MacBook is Apple's on-going brand of notebook computers, the first of which was released in 2006. It wasn't Apple's first foray into the notebook market, previously releasing the PowerBook and iBook, but it is by far their most recognised attempt. The brand has now evolved into the successful 'Air' and 'Pro' variations. " ,
+        "Afbeelding":"Images/Macbook.jpg"
+    },
+    {
+        "ID": "2010",
+        "Jaartal": "2010",
+        "Naam": "Apple Ipad",
+        "Beschrijving":"The iPad was Apple's first venture into tablet computers, and it quickly became a household brand. Drastically changing the direction of the tablet market, the iPad redefined the way users interact with technology, greatly bolstering and expanding their loyal following due to their innovative and creative ideas. " ,
+        "Afbeelding":"Images/ipad.png"
+    }
+
+]
