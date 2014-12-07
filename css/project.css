@@ -117,13 +117,24 @@ body{
 }
 
 #Intro{
-    background-color:#cab9a7;
+     background-color:#cab9a7;
+     margin-left:auto;
+     margin-right:auto;
+     min-width:800px;
+     max-width:1400px;
+    position:relative;
+     height:90%;
+ }
+
+
+#About{
+    background-color:red;
     margin-left:auto;
     margin-right:auto;
     min-width:800px;
     max-width:1400px;
-
-    height:90vh;
+    height:90%;
+    position: relative;
 }
 
 #mainFooter{
@@ -250,6 +261,15 @@ a.active{
     margin-top:-50px;
 
 }
+
+#Startcontent{
+    width:1400px;
+    height:180vh;
+    margin-left:auto;
+    margin-right:auto;
+
+}
+
 #Content{
     width:1400px;
     height:1500vh;
@@ -257,6 +277,8 @@ a.active{
     margin-right:auto;
 
 }
+
+
 .pc{
     height:100vh;
     background-color:#cab9a7;
