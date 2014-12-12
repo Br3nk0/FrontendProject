@@ -1,6 +1,6 @@
 <!DOCTYPE html>
-<html>
-<head lang="en">
+<html ng-app="app">
+<head>
     <meta charset="UTF-8">
     <title></title>
     <link href="css/bootstrap-theme.css" rel ="stylesheet"/>
@@ -42,61 +42,20 @@
         <p>THE EVOLUTION OF THE COMPUTER</p><img src="Images/pc1.png"/>
     </a>
 </nav>
+
     <div id="Content">
-        <div class="info"></div>
-        <div id="jaar71" class="pc" data-speed="10" data-type="background">
+        <div ng-view></div>
 
-
-        </div>
-        <div id="jaar72" class="pc" data-speed="2" data-type="background">
-
-        </div>
-        <div id="jaar73" class="pc" data-speed="4" data-type="background">
-
-        </div>
-        <div id="jaar77" class="pc">
-
-        </div>
-        <div id="jaar79" class="pc">
-
-        </div>
-        <div id="jaar80" class="pc">
-
-        </div>
-        <div id="jaar81" class="pc">
-
-        </div>
-        <div id="jaar83" class="pc">
-
-        </div>
-        <div id="jaar87" class="pc">
-
-        </div>
-        <div id="jaar89" class="pc">
-
-        </div>
-        <div id="jaar91" class="pc">
-
-        </div>
-        <div id="jaar92" class="pc">
-
-        </div>
-        <div id="jaar98" class="pc">
-
-        </div>
-        <div id="jaar06" class="pc">
-
-        </div>
-        <div id="jaar10" class="pc">
-
-        </div>
     </div>
+
     <footer id="mainFooter" class="navbar navbar-fixed-bottom"></footer>
-<script src="Scripts/bootstrap.js"></script>
-<script src="Scripts/npm.js"></script>
+<script src="Scripts/angular.js"></script>
+<script src="Scripts/angular-route.js"></script>
 <script src="Scripts/jquery-2.1.1.js"></script>
 <script src="Scripts/bootstrap.min.js"></script>
-<script src="Scripts/paralax.js"></script>
+<script src="Scripts/Media.js"></script>
+<script src="Src/app.js"></script>
+<script src="Src/Controllers/MediaController.js"></script>
 <script src="Scripts/project.js"></script>
 </body>
 </html>

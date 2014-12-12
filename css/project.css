@@ -267,7 +267,7 @@ a.active{
     width:60px;
     height:60px;
     background-color:#4ca297;
-    position:fixed;
+
 }
 .info:hover{
     width:475px;
@@ -276,7 +276,18 @@ a.active{
     margin-top:43.5vh;
     border-radius:10px;
 }
-
+.info:hover > .test{
+    display:block;
+}
+.test{
+    display:none;
+    color:white;
+    margin-top:50px;
+    margin-left:20px;
+    margin-right:20px;
+    padding-top:20px;
+    text-align: center;
+}
 #AboutUs{
     height:1075px;
     width:1400px;

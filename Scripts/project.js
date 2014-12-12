@@ -5,6 +5,7 @@ var divs = $('div')
     , ul = $('ul')
     , ul_height = ul.outerHeight();
 
+
 $(window).on('scroll', function () {
     var cur_pos = $(this).scrollTop();
 
@@ -21,3 +22,17 @@ $(window).on('scroll', function () {
         }
     });
 });
+(function(){
+    var info = document.getElementsByClassName("info");
+    var Info = document.getElementsByClassName('info')[0];
+    var element = document.getElementsByTagName('p')[0];
+    var j = info.length;
+    for(var i= 0;i<j;i++){
+        info[i].addEventListener("mouseover", function(){
+            element.className="tekstShow"
+        });
+        info[i].addEventListener("mouseout", function(){
+            element.style.display='none'
+        });
+    }
+})();
