@@ -3,6 +3,7 @@
  */
 
 (function(){
+
     var MediaController = function($scope, $http){
         //scope eigenschappen
         $scope.media=[];
@@ -14,8 +15,8 @@
 
                 var newMedia = new Media(value.Id,value.Jaartal, value.Naam, value.Beschrijving, value.Afbeelding);
 
-                if($scope.jaren.indexOf(value.Jaartal)<0){
-                    $scope.jaren.push(value.Jaartal);
+                if($scope.jaren.indexOf(value.Id)<0){
+                    $scope.jaren.push(value.Id);
                 }
                 $scope.media.push(newMedia);
             });
@@ -28,3 +29,4 @@
     app.controller("MediaController", ["$scope","$http",MediaController]);
 
 })();
+

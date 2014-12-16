@@ -14,5 +14,4 @@
         })
             .otherwise({redirectTo:"/Content"});
     });
-
 })();
