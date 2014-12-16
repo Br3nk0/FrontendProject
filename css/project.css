@@ -246,10 +246,10 @@ a.active{
 }
 #journey img{
     margin-left:10px;
-    width:100px;
-    height:103px;
+    height:85px;
+    width:auto;
     float:right;
-    margin-top:-86px;
+    margin-top:-75px;
     margin-right:15px;
 
 }
