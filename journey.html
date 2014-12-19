@@ -9,7 +9,7 @@
     <link href="css/bootstrap.css.map"/>
     <link href="css/project.css" rel="stylesheet"/>
 </head>
-<body>
+<body ng-controller="MediaController as main">
 <nav id="mainNav" class="navbar navbar-fixed-top">
     <div id="menuNav"class="btn-group">
         <button id="menu" type="button" class="btn btn-default" data-toggle="dropdown" aria-expanded="false">
@@ -22,22 +22,8 @@
         </ul>
     </div>
 
-    <ul id="jaartallen">
-        <li><a href="#jaar71">1971</a></li>
-        <li><a href="#jaar72">1972</a></li>
-        <li><a href="#jaar73">1973</a></li>
-        <li><a href="#jaar77">1977</a></li>
-        <li><a href="#jaar79">1979</a></li>
-        <li><a href="#jaar80">1980</a></li>
-        <li><a href="#jaar81">1981</a></li>
-        <li><a href="#jaar83">1983</a></li>
-        <li><a href="#jaar87">1987</a></li>
-        <li><a href=""">1989</a></li>
-        <li><a href="#jaar91">1991</a></li>
-        <li><a href="#jaar92">1992</a></li>
-        <li><a href="#jaar98">1998</a></li>
-        <li><a href="#jaar06">2006</a></li>
-        <li><a href="#jaar10">2010</a></li>
+    <ul id="jaartallen" ng-controller="headerCtrl">
+        <li ng-repeat="m in media"><a ng-click="gotoAnchor(m.Id)" >{{m.Year}}</a></li>
     </ul>
     <a href="Index.html" id="journey" >
         <p>THE EVOLUTION OF THE COMPUTER</p><img src="Images/pc1.png"/>

@@ -18,21 +18,7 @@ $(window).on('scroll', function () {
             divs.removeClass('active');
 
             $(this).addClass('active');
-            ul.find('a[href="#'+$(this).attr('id')+'"]').addClass('active');
+            ul.find('a[ng-click="gotoAnchor'+$(this).attr('id')+'"]').addClass('active');
         }
     });
 });
-(function(){
-    var info = document.getElementsByClassName("info");
-    var Info = document.getElementsByClassName('info')[0];
-    var element = document.getElementsByTagName('p')[0];
-    var j = info.length;
-    for(var i= 0;i<j;i++){
-        info[i].addEventListener("mouseover", function(){
-            element.className="tekstShow"
-        });
-        info[i].addEventListener("mouseout", function(){
-            element.style.display='none'
-        });
-    }
-})();
