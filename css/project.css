@@ -121,10 +121,12 @@ body{
 
 #Intro{
     background-color:#cab9a7;
+    background-image: url("../Images/achtergrondintro.jpg");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
     margin-left:auto;
     margin-right:auto;
-    min-width:800px;
-    max-width:1400px;
+    width: 100vw;
     height:100vh;
 }
 
@@ -346,6 +348,8 @@ img.wiggle-me:hover{-ms-animation:wiggle .3s 2;-moz-animation:wiggle .3s 2;-webk
 }*/
 
 #Content img{
-    width: 60vh;
+    height: 60vh;
     margin-top: 200px;
+    margin-left: auto;
+    margin-right: auto;
 }
