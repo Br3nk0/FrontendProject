@@ -5,7 +5,7 @@ $(document).ready(function(){
     // cache the window object
     $window = $(window);
 
-    $('div[data-type="background"]').each(function(){
+    $('div[data-type="background-color, background-imanges"]').each(function(){
         // declare the variable to affect the defined data-type
         var $scroll = $(this);
 

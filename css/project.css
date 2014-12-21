@@ -60,7 +60,7 @@ table {
 body{
     width:100%;
     background-color: #cab9a7;
-    height:3225px;
+    height:auto;
 }
 
 
@@ -241,14 +241,14 @@ a.active{
     width:250px;
     float:right;
     text-decoration: none;
-
+    margin-top:-100px;
 
 }
 #journey img{
     margin-left:10px;
     height:85px;
     width: auto;
-    margin-top:-60px;
+
 }
 
 #journey > p{
@@ -307,10 +307,45 @@ background-image: url("../Images/achtergrondaboutus.jpg");
     background-size: 100% 100%;
     background-repeat: no-repeat;
 }
-#AboutProject{
+
+#AboutUs > p {
+    width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 200px;
+    color: #ffffff;
+    font-family: UltimaLight;
+    font-size: 2em;
+    text-align: center;
+    font-weight: bolder;
+
+}
+#AboutUs img {
+    width: 190px;
+    height: auto;
+    padding: 20px;
+    padding-top: 40px;
+    -webkit-filter:blur(2px);
+
+}
+#AboutUs img:hover{
+    -webkit-filter:blur(0px);
+}
+@-ms-keyframes wiggle{0%{-ms-transform:rotate(3deg);}50%{-ms-transform:rotate(-3deg);}100%{-ms-transform:rotate(3deg);}}
+@-moz-keyframes wiggle{0%{-moz-transform:rotate(3deg);}50%{-moz-transform:rotate(-3deg);}100%{-moz-transform:rotate(3deg);}}
+@-webkit-keyframes wiggle{0%{-webkit-transform:rotate(3deg);}50%{-webkit-transform:rotate(-3deg);}100%{-webkit-transform:rotate(3deg);}}
+@keyframes wiggle{0%{transform:rotate(3deg);}50%{transform:rotate(-3deg);}100%{transform:rotate(3deg);}}
+img.wiggle-me:hover{-ms-animation:wiggle .3s 2;-moz-animation:wiggle .3s 2;-webkit-animation:wiggle .3s 2;animation:wiggle .3s 2;}
+
+/*#AboutProject{
     height:100vh;
     width:1400px;
     margin-left:auto;
     margin-right:auto;
     background-color:#cab9a7;
+}*/
+
+#Content img{
+    width: 60vh;
+    margin-top: 200px;
 }
