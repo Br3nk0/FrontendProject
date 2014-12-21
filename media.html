@@ -1,9 +1,10 @@
 <div ng-repeat="m in media" id="anchor{{m.Id}}" class="pc">
+
+    <div class="image">
+        <img ng-src="{{m.Picture}}"/>
+    </div>
     <div class="info">
         <div class="test">
             <p>{{m.Description}}</p></div>
-    </div>
-    <div class="image">
-        <img ng-src="{{m.Picture}}"/>
     </div>
 </div>
