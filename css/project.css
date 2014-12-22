@@ -271,10 +271,10 @@ a.active{
     margin-right:auto;
 
 }
-.pc{
+/*.pc{
     height:100vh;
     background-color:#cab9a7;
-}
+}*/
 .info{
     margin-left:1320px;
     width:60px;
@@ -283,10 +283,9 @@ a.active{
 
 }
 .info:hover{
-    width:400px;
-    height:50vh;
-    margin-left:975px;
-    margin-top:-49vh;
+    width:325px;
+    height:55vh;
+    margin-left:1050px;
     border-radius:10px;
 }
 .info:hover > .test{
@@ -357,18 +356,122 @@ img.wiggle-me:hover{-ms-animation:wiggle .3s 2;-moz-animation:wiggle .3s 2;-webk
 #mapcontainer{
     display:inline-block;
     float:left;
-    margin-top:-565px;
+    margin-top:-512px;
     margin-left:38vw;
 }
-/*.image #jaar92{
-    width:auto;
+#jaar73 > img{
+   margin-top:150px;
 }
-.image #jaar98{
-    width:auto;
-    margin-left:50vh;
+#jaar77 > img{
+    margin-top:170px;
+    margin-left:36vw;
+    height:473px;
+    width:375px;
 }
-.image #jaar10{
-    width:auto;
-    margin-left:45vh;
-
+#jaar79 > img{
+    margin-top:250px;
+}
+#jaar80 > img, #jaar81 > img{
+    margin-top:175px;
+}
+#jaar89 > img, #jaar81 > img{
+    margin-top:150px;
+}
+#jaar91 > img{
+    margin-top:120px;
+    width:479px;
+    height: 600px;
+}
+#jaar06 > img{
+    margin-top:130px;
+}
+#anchorjaar71 > .info{
+    margin-top:75px;
+}
+#anchorjaar71 > .info:hover{
+    margin-top:-356px;
+}
+#anchorjaar72 > .info{
+    margin-top:100px;
+}
+#anchorjaar72 > .info:hover{
+    margin-top:-331px;
+}
+#anchorjaar73 > .info{
+    margin-top:9px;
+}
+#anchorjaar73 > .info:hover{
+    margin-top:-422px;
+}
+#anchorjaar77 > .info{
+    margin-top:40px;
+}
+#anchorjaar77 > .info:hover{
+    margin-top:-391px;
+}
+#anchorjaar79 > .info{
+    margin-top:112px;
+}
+#anchorjaar79 > .info:hover{
+    margin-top:-319px;
+}
+#anchorjaar80 > .info{
+    margin-top:30px;
+}
+#anchorjaar80 > .info:hover{
+    margin-top:-401px;
+}
+#anchorjaar81 > .info{
+    margin-top:18px;
+}
+#anchorjaar81 > .info:hover{
+    margin-top:-413px;
+}
+#anchorjaar83 > .info{
+    margin-top:63px;
+}
+#anchorjaar83 > .info:hover{
+    margin-top:-368px;
+}
+#anchorjaar87 > .info{
+    margin-top:64px;
+}
+#anchorjaar87 > .info:hover{
+    margin-top:-367px;
+}
+#anchorjaar89 > .info{
+    margin-top:-27px;
+}
+#anchorjaar89 > .info:hover{
+    margin-top:-458px;
+}
+#anchorjaar91 > .info{
+    margin-top:-36px;
+}
+#anchorjaar91 > .info:hover{
+    margin-top:-467px;
+}
+#anchorjaar92 > .info{
+    margin-top:90px;
+}
+#anchorjaar92 > .info:hover{
+     margin-top:-341px;
+ }
+#anchorjaar98 > .info{
+    margin-top:84px;
+}
+#anchorjaar98 > .info:hover{
+    margin-top:-347px;
+}
+#anchorjaar06 > .info{
+    margin-top:5px;
+}
+#anchorjaar06 > .info:hover{
+    margin-top:-426px;
+}
+#anchorjaar10 > .info{
+    margin-top:118px;
+}
+#anchorjaar10 > .info:hover{
+    margin-top:-313px;
 }
