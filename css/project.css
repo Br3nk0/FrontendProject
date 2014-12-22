@@ -354,7 +354,13 @@ img.wiggle-me:hover{-ms-animation:wiggle .3s 2;-moz-animation:wiggle .3s 2;-webk
     margin-top: 200px;
 
 }
-.image #jaar92{
+#mapcontainer{
+    display:inline-block;
+    float:left;
+    margin-top:-565px;
+    margin-left:38vw;
+}
+/*.image #jaar92{
     width:auto;
 }
 .image #jaar98{

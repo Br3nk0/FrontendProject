@@ -22,3 +22,8 @@ $(window).on('scroll', function () {
         }
     });
 });
+
+window.onload = function(){
+    var ipad = document.getElementById('map');
+    ipad.innerHTML='<article></article>';
+};
