@@ -275,7 +275,6 @@ a.active{
 }
 .info{
     margin-left:1320px;
-    margin-top:10vh;
     width:60px;
     height:60px;
     background-color:#4ca297;
@@ -285,7 +284,7 @@ a.active{
     width:400px;
     height:50vh;
     margin-left:975px;
-    margin-top:-40.3vh;
+    margin-top:-49vh;
     border-radius:10px;
 }
 .info:hover > .test{
@@ -348,13 +347,21 @@ img.wiggle-me:hover{-ms-animation:wiggle .3s 2;-moz-animation:wiggle .3s 2;-webk
 }*/
 
 #Content img{
-<<<<<<< HEAD
     margin-left:32vw;
     width: 60vh;
-=======
     height: 60vh;
->>>>>>> FETCH_HEAD
     margin-top: 200px;
-    margin-left: auto;
-    margin-right: auto;
+
+}
+.image #jaar92{
+    width:auto;
+}
+.image #jaar98{
+    width:auto;
+    margin-left:50vh;
+}
+.image #jaar10{
+    width:auto;
+    margin-left:45vh;
+
 }
