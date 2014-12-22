@@ -27,6 +27,5 @@
     };
     var app = angular.module("app");
     app.controller("MediaController", ["$scope","$http",MediaController]);
-
 })();
 

@@ -1,29 +1,43 @@
 /**
  * Created by BrenkoD on 3/12/2014.
  */
-var divs = $('div')
-    , ul = $('ul')
-    , ul_height = ul.outerHeight();
+$(document).ready(function () {
+    $(document).on("scroll", onScroll);
 
+    //smoothscroll
+    $('a[href^="#"]').on('click', function (e) {
+        e.preventDefault();
+        $(document).off("scroll");
 
-$(window).on('scroll', function () {
-    var cur_pos = $(this).scrollTop();
+        $('a').each(function () {
+            $(this).removeClass('active');
+        })
+        $(this).addClass('active');
 
-    divs.each(function() {
-        var top = $(this).offset().top - ul_height,
-            bottom = top + $(this).outerHeight();
-
-        if (cur_pos >= top && cur_pos <= bottom) {
-            ul.find('a').removeClass('active');
-            divs.removeClass('active');
-
-            $(this).addClass('active');
-            ul.find('a[ng-click="gotoAnchor'+$(this).attr('id')+'"]').addClass('active');
-        }
+        var target = this.hash,
+            menu = target;
+        $target = $(target);
+        $('html, body').stop().animate({
+            'scrollTop': $target.offset().top+2
+        }, 500, 'swing', function () {
+            window.location.hash = target;
+            $(document).on("scroll", onScroll);
+        });
     });
 });
 
-window.onload = function(){
-    var ipad = document.getElementById('map');
-    ipad.innerHTML='<article></article>';
-};
+function onScroll(event){
+    var scrollPos = $(document).scrollTop();
+    $('#jaartallen a').each(function () {
+        var currLink = $(this);
+        var refElement = $(currLink.attr("href"));
+        if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
+            $('#jaartallen li a').removeClass("active");
+            currLink.addClass("active");
+        }
+        else{
+            currLink.removeClass("active");
+        }
+    });
+}
+

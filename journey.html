@@ -22,8 +22,23 @@
         </ul>
     </div>
 
-    <ul id="jaartallen" ng-controller="headerCtrl">
-        <li ng-repeat="m in media"><a ng-click="gotoAnchor(m.Id)" >{{m.Year}}</a></li>
+    <ul id="jaartallen">
+        <li><a href="#jaar71" class="active" >1971</a></li>
+        <li><a href="#jaar72" >1972</a></li>
+        <li><a href="#jaar73" >1973</a></li>
+        <li><a href="#jaar77" >1977</a></li>
+        <li><a href="#jaar79" >1979</a></li>
+        <li><a href="#jaar80" >1980</a></li>
+        <li><a href="#jaar81" >1981</a></li>
+        <li><a href="#jaar83" >1983</a></li>
+        <li><a href="#jaar87" >1987</a></li>
+        <li><a href="#jaar89" >1989</a></li>
+        <li><a href="#jaar91" >1991</a></li>
+        <li><a href="#jaar92" >1992</a></li>
+        <li><a href="#jaar98" >1998</a></li>
+        <li><a href="#jaar06" >2006</a></li>
+        <li><a href="#jaar10" >2010</a></li>
+
     </ul>
     <a href="Index.html" id="journey" >
         <p>THE EVOLUTION OF THE COMPUTER</p><img src="Images/pc1.png"/>
@@ -31,10 +46,99 @@
 </nav>
 
     <div id="Content">
-        <div ng-view></div>
-    <div id="map">
+        <div class="pc" id="jaar71">
+            <img src="{{media[0].Picture}}">
+            <div class="info">
+                <p>{{media[0].Description}}</p>
+            </div>
+        </div>
+        <div class="pc"id="jaar72">
+            <img src="{{media[1].Picture}}">
+            <div class="info">
+                <p>{{media[1].Description}}</p>
+            </div>
+        </div>
+        <div class="pc"id="jaar73">
+            <img src="{{media[2].Picture}}">
+            <div class="info">
+                <p>{{media[2].Description}}</p>
+            </div>
+        </div>
+        <div class="pc"id="jaar77">
+            <img src="{{media[3].Picture}}">
+            <div class="info">
+                <p>{{media[3].Description}}</p>
+            </div>
+        </div>
+        <div class="pc"id="jaar79">
+            <img src="{{media[4].Picture}}">
+            <div class="info">
+                <p>{{media[4].Description}}</p>
+            </div>
+        </div>
+        <div class="pc"id="jaar80">
+            <img src="{{media[5].Picture}}">
+            <div class="info">
+                <p>{{media[5].Description}}</p>
+            </div>
+        </div>
+        <div class="pc"id="jaar81">
+            <img src="{{media[6].Picture}}">
+            <div class="info">
+                <p>{{media[6].Description}}</p>
+            </div>
+        </div>
+        <div class="pc"id="jaar83">
+            <img src="{{media[7].Picture}}">
+            <div class="info">
+                <p>{{media[7].Description}}</p>
+            </div>
+        </div>
+        <div class="pc"id="jaar87">
+            <img src="{{media[8].Picture}}">
+            <div class="info">
+                <p>{{media[8].Description}}</p>
+            </div>
+        </div>
+        <div class="pc"id="jaar89">
+            <img src="{{media[9].Picture}}">
+            <div class="info">
+                <p>{{media[9].Description}}</p>
+            </div>
+        </div>
+        <div class="pc"id="jaar91">
+            <img src="{{media[10].Picture}}">
+            <div class="info">
+                <p>{{media[10].Description}}</p>
+            </div>
+        </div>
+        <div class="pc"id="jaar92">
+            <img src="{{media[11].Picture}}">
+            <div class="info">
+                <p>{{media[11].Description}}</p>
+            </div>
+        </div>
+        <div class="pc"id="jaar98">
+            <img src="{{media[12].Picture}}">
+            <div class="info">
+                <p>{{media[12].Description}}</p>
+            </div>
+        </div>
+        <div class="pc"id="jaar06">
+            <img src="{{media[13].Picture}}">
+            <div class="info">
+                <p>{{media[13].Description}}</p>
+            </div>
+        </div>
+        <div class="pc" id="jaar10">
 
-    </div>
+            <img src="{{media[14].Picture}}">
+            <div id="map"><article></article></div>
+            <div class="info">
+                <p>{{media[14].Description}}</p>
+            </div>
+        </div>
+
     </div>
 
 

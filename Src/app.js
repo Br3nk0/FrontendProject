@@ -8,13 +8,13 @@
 
     app.config(function($routeProvider){
 
-        $routeProvider.when("/Content",{
+        /*$routeProvider.when("/Content",{
             templateUrl:"./media.html",
             controller: "MediaController"
         })
-            .otherwise({redirectTo:"/Content"});
+            .otherwise({redirectTo:"/Content"});*/
     });
-    app.run(['$anchorScroll',function($anchorScroll){
+   /* app.run(['$anchorScroll',function($anchorScroll){
         $anchorScroll.yOffset = 50;
     }])
         .controller('headerCtrl', ['$anchorScroll', '$location', '$scope',
@@ -32,6 +32,7 @@
                     }
                 };
             }
-        ]);
+        ]);*/
+
 })();
 
