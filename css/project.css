@@ -370,7 +370,8 @@ img.wiggle-me:hover{-ms-animation:wiggle .3s 2;-moz-animation:wiggle .3s 2;-webk
     width:375px;
 }
 #jaar79 > img{
-    margin-top:250px;
+    margin-top:200px;
+    margin-left:-320px;
 }
 #jaar80 > img, #jaar81 > img{
     margin-top:175px;
@@ -411,10 +412,10 @@ img.wiggle-me:hover{-ms-animation:wiggle .3s 2;-moz-animation:wiggle .3s 2;-webk
     margin-top:-391px;
 }
 #jaar79 > .info{
-    margin-top:112px;
+    margin-top:88px;
 }
 #jaar79 > .info:hover{
-    margin-top:-319px;
+    margin-top:-345px;
 }
 #jaar80 > .info{
     margin-top:30px;
@@ -475,4 +476,24 @@ img.wiggle-me:hover{-ms-animation:wiggle .3s 2;-moz-animation:wiggle .3s 2;-webk
 }
 #jaar10 > .info:hover{
     margin-top:-313px;
+}
+#jaar79 > #pacman{
+    width:79.2px;
+    height:42.8px;
+    display:inline-block;
+    float:left;
+    margin-left:340px;
+    margin-top:300px;
+}
+#game{
+    position: relative;
+    width:80px;
+    height:45px;
+    float:left;
+    margin-top:305px;
+    margin-left:210px;
+    display:inline;
+    font-size:0.75em;
+    color:white;
+    text-align: center;
 }
