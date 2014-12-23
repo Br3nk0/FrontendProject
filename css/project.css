@@ -485,6 +485,22 @@ img.wiggle-me:hover{-ms-animation:wiggle .3s 2;-moz-animation:wiggle .3s 2;-webk
     margin-left:340px;
     margin-top:300px;
 }
+#print{
+    position:relative;
+    margin-left:585px;
+    margin-top:-170px;
+    -webkit-transform:rotate(8.5deg);
+
+}
+#print > input{
+    width:210px;
+}
+#print > button{
+    margin-left:20px;
+}
+.blad{
+
+}
 #game{
     position: relative;
     width:80px;

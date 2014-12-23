@@ -9,7 +9,7 @@
     <link href="css/bootstrap.css.map"/>
     <link href="css/project.css" rel="stylesheet"/>
 </head>
-<body ng-controller="MediaController as main">
+<body ng-controller="MediaController">
 <nav id="mainNav" class="navbar navbar-fixed-top">
     <div id="menuNav"class="btn-group">
         <button id="menu" type="button" class="btn btn-default" data-toggle="dropdown" aria-expanded="false">
@@ -53,7 +53,10 @@
             </div>
         </div>
         <div class="pc"id="jaar72">
+
             <img src="{{media[1].Picture}}">
+            <div id="print"><input type="text"><button>Print</button></div>
+            <div id="blad"></div>
             <div class="info">
                 <p>{{media[1].Description}}</p>
             </div>
