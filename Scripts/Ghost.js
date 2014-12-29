@@ -21,6 +21,7 @@ Ghost.prototype.toGhostHouse = function() {
         case Orange:
             initX = ghostHouse[0][1]*Grid_Width + Grid_Width/2;
             initY = ghostHouse[0][0]*Grid_Width + Grid_Width/2;
+            console.log(initX);
             break;
 
         case Cyan:

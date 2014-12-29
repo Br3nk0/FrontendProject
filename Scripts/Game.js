@@ -77,89 +77,89 @@ var gamePaused = false;
 var maze = new Array(Canvas_Height/Grid_Height);
 var mazeContent = [
 //row1
-    [Left_Top, Top_Bottom, Top_Bottom, Top_Only, Top_Bottom,
-        Top_Bottom, Top_Bottom, Right_Top, Left_Top, Top_Only,
+    [Left_Top, Top_Bottom, Top_Only, Top_Only, Top_Bottom,
+        Top_Only, Top_Bottom, Right_Top, Left_Top, Top_Only,
         Top_Only, Top_Only, Top_Only, Top_Only, Top_Only,
         Top_Only, Right_Top],
 //row2
-    [Left_Right, Bottom_Left_Top, Right_Top, Left_Right, Left_Top,
-        Top_Bottom, Top_Right_Bottom, Left_Right, Left_Bottom, Bottom_Only,
+    [Left_Right, Left_Top_Right, Left_Bottom, Right_Only, Left_Top_Right,
+        Left_Right, Closed_Grid, Left_Right, Left_Bottom, Bottom_Only,
         Bottom_Only, Bottom_Only, Bottom_Only, Bottom_Only, Empty_Grid,
         Empty_Grid, Right_Only],
 //row3
-    [Left_Bottom, Right_Top, Left_Right, Left_Right, Left_Right,
-        Bottom_Left_Top, Top_Bottom, Empty_Grid, Top_Bottom, Top_Bottom,
-        Top_Bottom, Top_Bottom, Top_Bottom, Right_Top, Left_Only,
+    [Left_Right, Left_Only, Top_Right_Bottom, Right_Bottom_Left, Left_Right,
+        Left_Only, Top_Bottom, Empty_Grid, Top_Only, Top_Bottom,
+        Top_Only, Top_Only, Top_Bottom, Right_Top, Left_Only,
         Empty_Grid, Right_Only],
 //row4
-    [Closed_Grid, Left_Right, Left_Right, Left_Right, Left_Bottom,
-        Top_Bottom, Right_Top, Left_Right, Bottom_Left_Top, Top_Bottom,
-        Top_Bottom, Top_Bottom, Top_Right_Bottom, Left_Right, Left_Only,
+    [Left_Right, Left_Right, Left_Top_Right,Bottom_Left_Top, Right_Only, Left_Right,
+        Left_Top_Right, Left_Bottom, Right_Only, Closed_Grid, Left_Only,
+        Right_Bottom, Left_Top_Right, Left_Right, Left_Only,
         Empty_Grid, Right_Only],
 //row5
-    [Left_Top, Right_Bottom, Left_Right, Left_Bottom, Top_Only,
-        Top_Right_Bottom, Left_Right, Left_Only, Top_Bottom, Top_Bottom,
-        Top_Bottom, Top_Only, Top_Bottom, Right_Bottom, Left_Only,
+    [Left_Right, Right_Bottom_Left, Left_Only, Right_Top, Right_Bottom_Left,
+        Left_Right, Left_Only, Top_Right_Bottom, Left_Bottom, Top_Only,
+        Right_Bottom, Bottom_Left_Top, Right_Only, Left_Right, Left_Only,
         Empty_Grid, Right_Only],
 //row6
-    [Left_Right, Bottom_Left_Top, Bottom_Only, Top_Right_Bottom, Left_Right,
-        Bottom_Left_Top, Right_Bottom, Left_Right, Left_Top, Top_Bottom,
-        Right_Top, Left_Right, Bottom_Left_Top, Top_Bottom, Bottom_Only,
+    [Left_Bottom, Top_Only, Bottom_Only, Bottom_Only, Top_Bottom,
+        Right_Only, Left_Right, Left_Top_Right, Closed_Grid, Right_Bottom_Left,
+        Closed_Grid, Left_Top_Right, Left_Right, Left_Right, Left_Bottom,
         Bottom_Only, Right_Bottom],
 //row7
-    [Left_Only, Top_Bottom, Top_Bottom, Top_Bottom, Bottom_Only,
-        Top_Bottom, Top_Bottom, Right_Only, Left_Right, Left_Top_Right,
-        Left_Right, Left_Only, Top_Bottom, Top_Bottom, Top_Bottom,
-        Top_Bottom, Right_Top],
+    [Left_Top_Right, Left_Right, Left_Top, Top_Only, Right_Top,
+        Left_Right, Right_Bottom_Left, Left_Only, Right_Top, Closed_Grid,
+        Left_Top, Right_Only, Right_Bottom_Left, Left_Only, Right_Top,
+        Closed_Grid, Left_Top_Right],
 //row8
-    [Left_Right, Bottom_Left_Top, Top_Bottom, Top_Bottom, Top_Bottom,
-        Top_Bottom, Top_Right_Bottom, Left_Right, Left_Right, Left_Right,
-        Left_Right, Left_Right, Bottom_Left_Top, Top_Bottom, Top_Bottom,
-        Top_Right_Bottom, Left_Right],
+    [Right_Bottom_Left, Left_Right, Left_Bottom, Bottom_Only, Right_Bottom,
+        Left_Only, Top_Bottom, Empty_Grid, Bottom_Only, Top_Bottom,
+        Bottom_Only, Empty_Grid, Top_Bottom, Bottom_Only, Bottom_Only,
+        Top_Bottom, Right_Only],
 //row9
-    [Left_Bottom, Top_Bottom, Top_Bottom, Top_Bottom, Top_Only,
-        Top_Bottom, Top_Bottom, Right_Only, Left_Right, Left_Right,
-        Left_Right, Left_Only, Top_Bottom, Top_Bottom, Top_Bottom,
-        Top_Bottom, Right_Only],
-//row10
-    [Left_Top, Top_Only, Top_Only, Right_Top, Left_Right,
-        Bottom_Left_Top, Top_Right_Bottom, Left_Right, Top_Right_Bottom, Left_Right,
-        Right_Bottom_Left, Left_Right, Bottom_Left_Top, Top_Bottom, Top_Bottom,
+    [Bottom_Left_Top, Bottom_Only, Top_Bottom, Top_Bottom, Top_Bottom,
+        Right_Only, Left_Top_Right, Left_Right, Left_Top, Top_Bottom,
+        Right_Top, Left_Right, Left_Top, Top_Bottom, Top_Bottom,
         Top_Right_Bottom, Left_Right],
+//row10
+    [Left_Top, Top_Only, Top_Only, Right_Top, Left_Top_Right,Left_Right,
+        Left_Right, Left_Right, Left_Right, Left_Top_Right, Left_Right,
+        Left_Right, Left_Right, Left_Top, Top_Only, Top_Only,
+        Right_Only],
 //row11
-    [Left_Only, Empty_Grid, Empty_Grid, Right_Only, Left_Only,
-        Top_Bottom, Top_Bottom, Bottom_Only, Top_Only, Bottom_Only,
-        Top_Bottom, Bottom_Only, Top_Only, Top_Bottom, Top_Bottom,
-        Top_Bottom, Right_Only],
+    [Left_Only, Empty_Grid, Empty_Grid, Right_Only, Right_Bottom_Left,
+        Left_Right, Right_Bottom_Left, Left_Right, Left_Right, Left_Right,
+        Left_Right, Left_Right, Left_Right, Left_Bottom, Bottom_Only,
+        Bottom_Only, Right_Only],
 //row12
-    [Left_Only, Empty_Grid, Empty_Grid, Right_Only, Left_Right,
-        Bottom_Left_Top, Top_Bottom, Right_Top, Left_Right, Bottom_Left_Top,
-        Top_Bottom, Right_Top, Left_Right, Bottom_Left_Top, Top_Bottom,
-        Right_Top, Left_Right],
+    [Left_Only, Empty_Grid, Empty_Grid, Right_Only, Left_Top,
+        Bottom_Only, Top_Only, Right_Bottom, Left_Right, Left_Right,
+        Left_Right, Left_Right, Left_Only, Top_Only, Top_Bottom,
+        Top_Right_Bottom, Left_Right],
 //row13
-    [Left_Only, Empty_Grid, Empty_Grid, Right_Only, Left_Only,
-        Top_Bottom, Top_Right_Bottom, Left_Right, Left_Only, Top_Bottom,
-        Top_Right_Bottom, Left_Right, Left_Only, Top_Bottom, Right_Top,
-        Left_Right, Left_Right],
+    [Left_Only, Empty_Grid, Empty_Grid, Right_Only, Left_Right,
+        Left_Top_Right, Left_Right, Bottom_Left_Top, Right_Bottom, Left_Right,
+        Right_Bottom_Left, Left_Right, Left_Bottom, Right_Bottom, Left_Top,
+        Top_Bottom, Right_Only],
 //row14
     [Left_Only, Empty_Grid, Empty_Grid, Right_Only, Left_Right,
-        Left_Top, Top_Bottom, Right_Bottom, Left_Right, Bottom_Left_Top,
-        Top_Bottom, Right_Only, Left_Right, Left_Top_Right, Left_Right,
-        Left_Right, Left_Right],
+        Left_Right, Left_Bottom,Top_Only, Top_Bottom, Bottom_Only, Top_Only,
+        Bottom_Only, Top_Bottom, Top_Bottom, Right_Bottom, Left_Top_Right,
+        Left_Right],
 //row15
     [Left_Only, Empty_Grid, Empty_Grid, Right_Only, Left_Right,
-        Left_Right, Bottom_Left_Top, Top_Bottom, Empty_Grid, Top_Bottom,
-        Top_Right_Bottom, Left_Right, Left_Right, Left_Right, Left_Right,
-        Left_Right, Left_Right],
+        Left_Only, Right_Top, Left_Right, Left_Top, Right_Top,
+        Left_Right, Bottom_Left_Top,Top_Bottom, Top_Bottom, Top_Bottom,
+        Right_Only, Left_Right],
 //row16
     [Left_Only, Empty_Grid, Empty_Grid, Right_Only, Left_Right,
-        Left_Bottom, Top_Bottom, Top_Right_Bottom, Left_Right, Bottom_Left_Top,
-        Top_Bottom, Right_Bottom, Left_Right, Left_Right, Left_Right,
-        Top_Right_Bottom, Left_Right],
+        Left_Bottom, Right_Bottom, Left_Right, Left_Bottom, Right_Bottom,
+        Left_Only, Top_Bottom, Top_Bottom, Top_Bottom, Right_Top,
+        Right_Bottom_Left, Left_Right],
 //row17
     [Left_Bottom, Bottom_Only, Bottom_Only, Right_Bottom, Left_Bottom,
-        Top_Bottom, Top_Bottom, Top_Bottom, Bottom_Only, Top_Bottom,
-        Top_Bottom, Top_Bottom, Right_Bottom, Right_Bottom_Left, Left_Bottom,
+        Top_Bottom, Top_Bottom, Bottom_Only, Top_Bottom, Top_Bottom,
+        Right_Bottom, Bottom_Left_Top, Top_Bottom, Top_Right_Bottom, Left_Bottom,
         Top_Bottom, Right_Bottom]
 ];
 
@@ -172,12 +172,12 @@ var staticGridsIndex = 0;
 var pacmanStartLoc = [4,9];
 
 // grids with no beans
-var noBean = [pacmanStartLoc,[5,12],[5,13],[5,3],[9,5],[9,6],[1,1],[5,1],[3,0],[2,4],[4,6],[5,6],[5,5],[12,7],[14,5],[12,11],[14,11]];
+var noBean = [pacmanStartLoc,[2,2],[3,3],[8,9],[1,6],[4,7],[5,8],[6,9],[5,10],[4,11],[3,9],[12,7],[6,15]];
 var noBeanIndex=noBean.length;
 
 
 // power beans in maze
-var powerBeans = [[0,0], [2,13], [16,4], [16,16], [2,5], [14,10]];
+var powerBeans = [[0,0], [2,13], [16,4], [16,16], [7,9],[2,5], [14,10]];
 
 
 // ghost house
@@ -239,7 +239,7 @@ function initMaze(){
 
 function initFields () {
     // body...
-    for (var i=6; i<10; i++){
+    for (var i=9; i<13; i++){
         ghostHouse[ghostHouseIndex]=[i,9];
         ghostHouseIndex++;
     }
@@ -284,62 +284,109 @@ function initFields () {
             noBeanIndex++;
         }
     }
-    for (var i=1; i<6; i++){
-        noBean[noBeanIndex]=[i,2];
-        noBeanIndex++;
-    }
-    for(var i=1; i<4; i+=2){
-        for(var j=4; j<7; j++){
+    for(var i=6; i<8;i++){
+        for(var j=2;j<5;j++){
             noBean[noBeanIndex]=[i,j];
             noBeanIndex++;
         }
     }
-    for (var j=8; j<13; j++){
-        noBean[noBeanIndex]=[3,j];
-        noBeanIndex++;
-    }
-    for (var j=1; j<7; j++){
-        noBean[noBeanIndex]=[7,j];
-        noBeanIndex++;
-    }
-    for (var i=5; i<10; i++){
-        for(var j=8; j<11; j++){
+    for(var i=14; i<16;i++){
+        for(var j=8;j<10;j++){
             noBean[noBeanIndex]=[i,j];
             noBeanIndex++;
         }
     }
-    for (var j=12; j<16; j++){
-        noBean[noBeanIndex]=[7,j];
+    for(var i=1; i<5;i++){
+        noBean[noBeanIndex]=[i,1];
         noBeanIndex++;
+
     }
-    for (var j=12; j<16; j++){
-        noBean[noBeanIndex]=[9,j];
+    for(var i=1; i<5;i++){
+        noBean[noBeanIndex]=[i,4];
         noBeanIndex++;
+
     }
-    for(var i=11; i<16; i+=2){
-        for(var j=5; j<8; j++){
-            noBean[noBeanIndex]=[i,j];
-            noBeanIndex++;
-        }
-    }
-    for(var i=11; i<16; i+=2){
-        for(var j=9; j<12; j++){
-            noBean[noBeanIndex]=[i,j];
-            noBeanIndex++;
-        }
-    }
-    for(var j=13; j<16; j++){
-        noBean[noBeanIndex]=[11, j];
+    for(var i=3; i<7;i++){
+        noBean[noBeanIndex]=[i,6];
         noBeanIndex++;
+
     }
-    for(var i=12; i<16; i++){
-        noBean[noBeanIndex]=[i, 15];
+    for(var i=3; i<7;i++){
+        noBean[noBeanIndex]=[i,12];
         noBeanIndex++;
+
     }
-    for(var i=13; i<17; i++){
-        noBean[noBeanIndex]=[i, 13];
+    for(var i=6; i<8;i++){
+        noBean[noBeanIndex]=[i,0];
         noBeanIndex++;
+
     }
+    for(var i=8; i<11;i++){
+        noBean[noBeanIndex]=[i,6];
+        noBeanIndex++;
+
+    }
+    for(var i=8; i<13;i++){
+        noBean[noBeanIndex]=[i,8];
+        noBeanIndex++;
+
+    }
+    for(var i=8; i<13;i++){
+        noBean[noBeanIndex]=[i,10];
+        noBeanIndex++;
+
+    }
+    for(var i=12; i<16;i++){
+        noBean[noBeanIndex]=[i,5];
+        noBeanIndex++;
+
+    }
+    for(var i=14; i<16;i++){
+        noBean[noBeanIndex]=[i,6];
+        noBeanIndex++;
+
+    }
+    for(var i=9; i<11;i++){
+        noBean[noBeanIndex]=[i,4];
+        noBeanIndex++;
+
+    }
+    for(var i=13; i<16;i++){
+        noBean[noBeanIndex]=[i,15];
+        noBeanIndex++;
+
+    }
+    for(var i=9; i<12;i++){
+        noBean[noBeanIndex]=[i,12];
+        noBeanIndex++;
+
+    }
+    for(var j=11; j<14;j++){
+        noBean[noBeanIndex]=[16,j];
+        noBeanIndex++;
+
+    }
+    for(var j=11; j<15;j++){
+        noBean[noBeanIndex]=[14,j];
+        noBeanIndex++;
+
+    }
+    for(var j=12; j<16;j++){
+        noBean[noBeanIndex]=[8,j];
+        noBeanIndex++;
+
+    }
+    for(var j=12; j<16;j++){
+        noBean[noBeanIndex]=[11,j];
+        noBeanIndex++;
+
+    }
+    for(var j=12; j<14;j++){
+        noBean[noBeanIndex]=[12,j];
+        noBeanIndex++;
+
+    }
+
 }
 /*================END Initialization Methods==============*/
 
