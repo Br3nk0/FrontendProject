@@ -36,103 +36,204 @@
 </div>
 </nav>
 <div id="wrapper">
+
+
+    <!--
+    <div id="tijdlijn" class="fixed">
+
+        <ul id="jaartallen">
+            <li><a href="timeline.html#jaar71" class="active" >1971</a></li>
+            <li><a href="timeline.html#jaar72" >1972</a></li>
+            <li><a href="timeline.html#jaar73" >1973</a></li>
+            <li><a href="timeline.html#jaar77" >1977</a></li>
+            <li><a href="timeline.html#jaar79" >1979</a></li>
+            <li><a href="timeline.html#jaar80" >1980</a></li>
+            <li><a href="timeline.html#jaar81" >1981</a></li>
+            <li><a href="timeline.html#jaar83" >1983</a></li>
+            <li><a href="timeline.html#jaar87" >1987</a></li>
+            <li><a href="timeline.html#jaar89" >1989</a></li>
+            <li><a href="timeline.html#jaar91" >1991</a></li>
+            <li><a href="timeline.html#jaar92" >1992</a></li>
+            <li><a href="timeline.html#jaar98" >1998</a></li>
+            <li><a href="timeline.html#jaar06" >2006</a></li>
+            <li><a href="timeline.html#jaar10" >2010</a></li>
+
+        </ul>
+    </div>
+
+    -->
  <div id="goback"> <a href="journey.html"><span class=" glyphicon glyphicon-chevron-left goback" aria-hidden="true"></span></a> </div>
     <div id="Content">
         <div class="pc" id="jaar71">
+            <div class="jaartal">
+                <p class="naam fadeIn">{{media[0].Name}}</p>
+                <p class="year">{{media[0].Year}}</p>
+
+            </div>
             <img src="{{media[0].Picture}}">
-            <div class="info">
+            <div class="info slideUp">
                 <p>{{media[0].Description}}</p>
             </div>
+            
         </div>
         <div class="pc"id="jaar72">
+            <div class="jaartal">
+                <p  class="naam fadeIn">{{media[1].Name}}</p>
+                <p class="year" >{{media[1].Year}}</p>
 
+            </div>
             <img src="{{media[1].Picture}}">
+            
             <div id="print"><input type="text"><button>Print</button></div>
             <div id="blad"></div>
-            <div class="info">
+            <div class="info slideUp">
                 <p>{{media[1].Description}}</p>
             </div>
         </div>
         <div class="pc"id="jaar73">
+            <div class="jaartal">
+                <p class="naam fadeIn">{{media[2].Name}}</p>
+                <p class="year">{{media[2].Year}}</p>
+
+            </div>
             <img src="{{media[2].Picture}}">
-            <div class="info">
+            <div class="info slideUp">
                 <p>{{media[2].Description}}</p>
             </div>
         </div>
         <div class="pc"id="jaar77">
+            <div class="jaartal">
+                <p  class="naam fadeIn">{{media[3].Name}}</p>
+                <p class="year">{{media[3].Year}}</p>
+
+            </div>
             <img src="{{media[3].Picture}}">
-            <div class="info">
+            <div class="info slideUp">
                 <p>{{media[3].Description}}</p>
             </div>
         </div>
         <div class="pc"id="jaar79">
             <img src="Images/pacman.png" id="pacman" draggable="true" ondragstart="drag(event)">
+            <div class="jaartal">
+                <p  class="naam fadeIn">{{media[4].Name}}</p>
+                <p class="year">{{media[4].Year}}</p>
 
+            </div>
             <img src="{{media[4].Picture}}">
             <div id="game" ondrop="drop(event)" ondragover="allowDrop(event)"> Drag pacman in here</div>
-            <div class="info">
+            <div class="info slideUp">
                 <p>{{media[4].Description}}</p>
             </div>
         </div>
         <div class="pc"id="jaar80">
+            <div class="jaartal">
+                <p  class="naam fadeIn">{{media[5].Name}}</p>
+                <p class="year">{{media[5].Year}}</p>
+
+            </div>
             <img src="{{media[5].Picture}}">
-            <div class="info">
+            <div class="info slideUp">
                 <p>{{media[5].Description}}</p>
             </div>
         </div>
         <div class="pc"id="jaar81">
+            <div class="jaartal">
+                <p  class="naam fadeIn">{{media[6].Name}}</p>
+                <p class="year">{{media[6].Year}}</p>
+
+            </div>
             <img src="{{media[6].Picture}}">
-            <div class="info">
+            <div class="info slideUp">
                 <p>{{media[6].Description}}</p>
             </div>
         </div>
         <div class="pc"id="jaar83">
+            <div class="jaartal">
+                <p  class="naam fadeIn">{{media[7].Name}}</p>
+                <p class="year">{{media[7].Year}}</p>
+
+            </div>
             <img src="{{media[7].Picture}}">
-            <div class="info">
+            <div class="info slideUp">
                 <p>{{media[7].Description}}</p>
             </div>
         </div>
         <div class="pc"id="jaar87">
+            <div class="jaartal">
+                <p  class="naam fadeIn">{{media[8].Name}}</p>
+                <p class="year">{{media[8].Year}}</p>
+
+            </div>
             <img src="{{media[8].Picture}}">
-            <div class="info">
-                <p>{{media[8].Description}}</p>
+            <div class="info slideUp">
+                <p >{{media[8].Description}}</p>
             </div>
         </div>
         <div class="pc"id="jaar89">
+            <div class="jaartal">
+                <p  class="naam fadeIn">{{media[9].Name}}</p>
+                <p  class="year">{{media[9].Year}}</p>
+
+            </div>
             <img src="{{media[9].Picture}}">
-            <div class="info">
-                <p>{{media[9].Description}}</p>
+            <div class="info slideUp">
+                <p >{{media[9].Description}}</p>
             </div>
         </div>
         <div class="pc"id="jaar91">
+            <div class="jaartal">
+                <p  class="naam fadeIn">{{media[10].Name}}</p>
+                <p  class="year">{{media[10].Year}}</p>
+
+            </div>
             <img src="{{media[10].Picture}}">
-            <div class="info">
+            <div class="info slideUp">
                 <p>{{media[10].Description}}</p>
             </div>
         </div>
         <div class="pc"id="jaar92">
+            <div class="jaartal">
+                <p class="naam fadeIn">{{media[11].Name}}</p>
+                <p  class="year">{{media[11].Year}}</p>
+
+            </div>
             <img src="{{media[11].Picture}}">
-            <div class="info">
+            <div class="info slideUp">
                 <p>{{media[11].Description}}</p>
             </div>
         </div>
         <div class="pc"id="jaar98">
+            <div class="jaartal">
+                <p  class="naam fadeIn">{{media[12].Name}}</p>
+                <p  class="year">{{media[12].Year}}</p>
+
+            </div>
             <img src="{{media[12].Picture}}">
-            <div class="info">
+            <div class="info slideUp">
                 <p>{{media[12].Description}}</p>
             </div>
         </div>
         <div class="pc"id="jaar06">
+            <div class="jaartal">
+                <p  class="naam fadeIn">{{media[13].Name}}</p>
+                <p  class="year">{{media[13].Year}}</p>
+
+            </div>
             <img src="{{media[13].Picture}}">
-            <div class="info">
+            <div class="info slideUp">
                 <p>{{media[13].Description}}</p>
             </div>
         </div>
         <div class="pc" id="jaar10">
 
+            <div class="jaartal">
+                <p  class="naam fadeIn">{{media[14].Name}}</p>
+                <p  class="year">{{media[14].Year}}</p>
+
+            </div>
             <img src="{{media[14].Picture}}">
             <div id="map"><article></article></div>
-            <div class="info">
+            <div class="info slideUp">
                 <p>{{media[14].Description}}</p>
             </div>
         </div>

@@ -244,6 +244,14 @@ h1{
 position: fixed;
 }
 
+#tijdlijn {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 70vh;
+    position: fixed;
+}
+
 
 #jaartallen{
    width: 55%;
@@ -278,7 +286,8 @@ position: fixed;
 }
 
 .pc {
-    height: 100vh;
+    height: 90vh;
+    margin-top: 50px;
 }
 
 .titelfuture {
@@ -297,4 +306,47 @@ position: fixed;
     color: white;
     font-family: Bebas;
     font-size: 30px;
+}
+
+
+.naam {
+    margin-top: 85px;
+    font-family: Bebas;
+    text-align: center;
+    color:  #ffffff;
+    font-size: 72px;
+    text-transform: capitalize;
+}
+
+.year {
+    margin-top: -10px;
+    width: 15vw;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding: 4px;
+    background-color: #DB224B;
+    font-family: Bebas;
+    color:  #ffffff;
+    font-size: 30px;
+
+
+}
+
+.info {
+    margin-top: 70px;
+    float: left;
+    max-width: 35vw;
+    color:  #ffffff;
+    font-size: 18px;
+    text-align: justify;
+
+}
+
+.pc img {
+    margin-top: 50px;
+    max-width: 375px;
+    height: auto;
+    float: right;
+    margin-right: 50px;
 }
