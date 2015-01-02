@@ -1,7 +1,7 @@
 
 @font-face {
     font-family: UltimaItalic;
-    src: url('../Fonts/UltimaPDab-HairlineItalic.ttf');
+    src: url('../Fonts/OpenSans-Italic.ttf');
 }
 
 @font-face {
@@ -10,7 +10,7 @@
 }
 @font-face{
     font-family: UltimaLight;
-    src:url('../Fonts/UltimaPDac-UltraLight.ttf');
+    src:url('../Fonts/OpenSans-Regular.ttf');
 }
 
 body, div, span, applet, object, iframe,
