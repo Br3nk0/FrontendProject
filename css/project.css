@@ -61,7 +61,7 @@ body{
     width:100%;
     background-color: #cab9a7;
     height:auto;
-    background-image: url('../Images/backgroudbody.jpg');
+    background-image: url('../FrontendNew/Images/backgroudbody.jpg');
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -126,7 +126,7 @@ body{
 
 #Intro{
     background-color:#cab9a7;
-    background-image: url("../Images/achtergrondintro.jpg");
+    background-image: url("../FrontendNew/Images/achtergrondintro.jpg");
     background-size: 100% auto;
     background-repeat: no-repeat;
     margin-left:auto;
@@ -283,7 +283,7 @@ body{
 .pc{
     height:100vh;
     background-color:#cab9a7;
-    background-image: url('../Images/backgroundpc.jpg');
+    background-image: url('../FrontendNew/Images/backgroundpc.jpg');
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -319,7 +319,7 @@ body{
     width:100vw;
     margin-left:auto;
     margin-right:auto;
-background-image: url("../Images/achtergrondaboutus.jpg");
+background-image: url("../FrontendNew/Images/achtergrondaboutus.jpg");
     background-size: 100% 100%;
     background-repeat: no-repeat;
 }
