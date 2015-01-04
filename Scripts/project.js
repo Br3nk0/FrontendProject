@@ -31,7 +31,11 @@ var scrollPos = $(document).scrollTop(),
     toonKaart = document.getElementById("locatie"),
     printen = document.getElementById("printen"),
     blad = document.getElementsByClassName("blad"),
-    tekst = document.getElementById("tekst");
+    tekst = document.getElementById("tekst"),
+    bold = document.getElementById("bold"),
+    italic= document.getElementById("italic"),
+    line = document.getElementById("line"),
+    verwerker = document.getElementById("verwerker");
 
 function onScroll(event){
 
@@ -63,6 +67,15 @@ function drop(ev) {
     showPacman.style.display="block";
     window.location.hash = '#myCanvas';
 }
+bold.addEventListener("click",function(){
+    verwerker.className="bold";
+})
+italic.addEventListener("click",function(){
+    verwerker.className="italic";
+})
+line.addEventListener("click",function(){
+    verwerker.className="line";
+})
 toonKaart.addEventListener("click",function(){
     script.setAttribute('type', 'text/javascript');
     script.setAttribute('src', '../Scripts/googlemaps.js');

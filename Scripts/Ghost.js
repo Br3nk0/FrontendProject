@@ -13,8 +13,8 @@ function Ghost(xCord, yCord, gColor, direction){
 
 }
 
-//send this ghost back to ghost house.
-//location in ghost house is determined by its color
+//stuur de geest naar zijn huis
+//locatie in het huis is gebaseerd op het kleur
 Ghost.prototype.toGhostHouse = function() {
     var initX, initY;
     switch(this.color){
@@ -50,7 +50,7 @@ Ghost.prototype.toGhostHouse = function() {
 Ghost.prototype.draw = function() {
 
     if(!this.isDead){
-        // body color
+        // lichaam kleur
         if(this.isWeak){
             if(this.isBlinking){
                 ctx.fillStyle = Blinking_Color;
@@ -69,7 +69,7 @@ Ghost.prototype.draw = function() {
         ctx.moveTo(this.x-this.radius, this.y);
 
 
-        // LEGS
+        // benen
         if (!this.isMoving){
             ctx.lineTo(this.x-this.radius, this.y+this.radius);
             ctx.lineTo(this.x-this.radius+this.radius/3, this.y+this.radius-this.radius/4);
@@ -108,16 +108,16 @@ Ghost.prototype.draw = function() {
             ctx.strokeStyle = "white";
         }
 
-        //eyes
-        ctx.beginPath();//left eye
+        //ogen
+        ctx.beginPath();//linker oog
         ctx.arc(this.x-this.radius/2.5, this.y-this.radius/5, this.radius/5, 0, Math.PI*2, true); // white
         ctx.fill();
 
-        ctx.beginPath(); // right eye
+        ctx.beginPath(); // rechter oog
         ctx.arc(this.x+this.radius/2.5, this.y-this.radius/5, this.radius/5, 0, Math.PI*2, true); // white
         ctx.fill();
 
-        //mouth
+        //mond
         ctx.beginPath();
         ctx.lineWidth=1;
         ctx.moveTo(this.x-this.radius+this.radius/5, this.y+this.radius/2);
@@ -130,13 +130,13 @@ Ghost.prototype.draw = function() {
         ctx.stroke();
     }
     else{
-        // EYES
-        ctx.fillStyle = "white"; //left eye
+        // ogen
+        ctx.fillStyle = "white"; //linker oog
         ctx.beginPath();
         ctx.arc(this.x-this.radius/2.5, this.y-this.radius/5, this.radius/3, 0, Math.PI*2, true); // white
         ctx.fill();
 
-        ctx.fillStyle = "white"; //right eye
+        ctx.fillStyle = "white"; //rechter oog
         ctx.beginPath();
         ctx.arc(this.x+this.radius/2.5, this.y-this.radius/5, this.radius/3, 0, Math.PI*2, true); // white
         ctx.fill();
@@ -145,48 +145,48 @@ Ghost.prototype.draw = function() {
         switch(this.dir){
 
             case Up:
-                ctx.fillStyle="black"; //left eyeball
+                ctx.fillStyle="black"; //linker oogbal
                 ctx.beginPath();
                 ctx.arc(this.x-this.radius/3, this.y-this.radius/5-this.radius/6, this.radius/6, 0, Math.PI*2, true); //black
                 ctx.fill();
 
-                ctx.fillStyle="black"; //right eyeball
+                ctx.fillStyle="black"; //rechter oogbal
                 ctx.beginPath();
                 ctx.arc(this.x+this.radius/3, this.y-this.radius/5-this.radius/6, this.radius/6, 0, Math.PI*2, true); //black
                 ctx.fill();
                 break;
 
             case Down:
-                ctx.fillStyle="black"; //left eyeball
+                ctx.fillStyle="black"; //linker oogbal
                 ctx.beginPath();
                 ctx.arc(this.x-this.radius/3, this.y-this.radius/5+this.radius/6, this.radius/6, 0, Math.PI*2, true); //black
                 ctx.fill();
 
-                ctx.fillStyle="black"; //right eyeball
+                ctx.fillStyle="black"; //rechter oogbal
                 ctx.beginPath();
                 ctx.arc(this.x+this.radius/3, this.y-this.radius/5+this.radius/6, this.radius/6, 0, Math.PI*2, true); //black
                 ctx.fill();
                 break;
 
             case Left:
-                ctx.fillStyle="black"; //left eyeball
+                ctx.fillStyle="black"; //linker oogbal
                 ctx.beginPath();
                 ctx.arc(this.x-this.radius/3-this.radius/5, this.y-this.radius/5, this.radius/6, 0, Math.PI*2, true); //black
                 ctx.fill();
 
-                ctx.fillStyle="black"; //right eyeball
+                ctx.fillStyle="black"; //rechter oogbal
                 ctx.beginPath();
                 ctx.arc(this.x+this.radius/3-this.radius/15, this.y-this.radius/5, this.radius/6, 0, Math.PI*2, true); //black
                 ctx.fill();
                 break;
 
             case Right:
-                ctx.fillStyle="black"; //left eyeball
+                ctx.fillStyle="black"; //linker oogbal
                 ctx.beginPath();
                 ctx.arc(this.x-this.radius/3+this.radius/15, this.y-this.radius/5, this.radius/6, 0, Math.PI*2, true); //black
                 ctx.fill();
 
-                ctx.fillStyle="black"; //right eyeball
+                ctx.fillStyle="black"; //rechter oogbal
                 ctx.beginPath();
                 ctx.arc(this.x+this.radius/3+this.radius/5, this.y-this.radius/5, this.radius/6, 0, Math.PI*2, true); //black
                 ctx.fill();
@@ -208,7 +208,7 @@ Ghost.prototype.getCol = function() {
     return getColIndex(this.x);
 };
 
-//move one step in the current direction if allowed
+// maak in stap in de gegeven richting als dit toegestaan is
 Ghost.prototype.moveOneStep = function() {
     // body...
     var newX =0;
@@ -254,18 +254,18 @@ Ghost.prototype.moveOneStep = function() {
     }
 };
 
-//make an 180-degree turn
+//maak een 180 graden bocht
 Ghost.prototype.turnBack = function() {
     this.dir = oppositeDir(this.dir);
 };
 
-//try to turn(if necessary) and move the ghost
+//probeer te draaien als dit noodzakelijk is en beweeg de geest
 Ghost.prototype.move = function() {
 
-    this.isMoving = !this.isMoving;//so the ghost looks like it's moving
+    this.isMoving = !this.isMoving;//de geest lijkt te bewegen
     if(this.isWeak){
-        //if weak, reduce speed and make an immediate turn.
-        //Ghost starts making random moves until turning back to normal
+        //als het zwak is vertraag de snelheid en laat hem in tegengestelde richting bewegen
+        // geest start met random bewegen tot hij terug normaal is
         this.speed = speed/2;
         if(weakCounter === Weak_Duration){
             this.dir = oppositeDir(this.dir);
@@ -300,7 +300,7 @@ Ghost.prototype.move = function() {
         this.stepCounter++;
     }
     else{
-        //normal ghost
+        //normale geest
         if(this.stepCounter != 0 && this.stepCounter % 2 !=0){
             this.speed = speed/2;
             this.stepCounter = 0;
@@ -312,8 +312,8 @@ Ghost.prototype.move = function() {
             this.moveOneStep();
         }
         else{
-            // on grid center
-            //first check if dead end
+            // op een grid center
+            //eerst checken of hij dood is
              var currGrid = maze[getRowIndex(this.y)][getColIndex(this.x)];
             if(currGrid.gridType === Left_Top_Right){
                 this.dir = Down;
@@ -355,17 +355,17 @@ Ghost.prototype.move = function() {
 
 };
 
-//blinky always chooses the tile that will make it closest to pacman
+//blinky kiest altijd de tegel dat hem het dichtst bij pacman brengt
 Ghost.prototype.blinkyMove = function() {
     this.moveToPacman(true);
 };
 
-//pinky chooses the tile that is 4 steps ahead of pacman
+//pinky kiest de tegel dat 4 stappen voor pacman is
 Ghost.prototype.pinkyMove = function() {
     this.moveToPacman(false);
 };
 
-//inky is unpredictable, makes random move
+//inky is onvoorspelbaar maakt random bewegingen
 Ghost.prototype.inkyMove = function() {
     this.randomMove();
 };
@@ -375,7 +375,7 @@ Ghost.prototype.moveToPacman = function(targetPacman) {
     var leftDist, rightDist, upDist, downDist;
     var currDir = this.dir;
     var minDist = veryLargeDistance;
-    //get distance if moved to left
+    //haal afstand als hij naar links beweegt
     if(currDir === Right || !canMove(this.x, this.y, Left)){
         leftDist = minDist;
     }
@@ -383,7 +383,7 @@ Ghost.prototype.moveToPacman = function(targetPacman) {
         leftDist = this.getTestDistance(Left,targetPacman);
     }
 
-    //get distance to right
+    //haal afstand als hij naar rechts beweegt
     if(currDir === Left || !canMove(this.x, this.y, Right)){
         rightDist = veryLargeDistance;
     }
@@ -391,7 +391,7 @@ Ghost.prototype.moveToPacman = function(targetPacman) {
         rightDist = this.getTestDistance(Right,targetPacman);
     }
 
-    //get distance - up
+    //haal afstand als hij naar omhoog beweegt
     if(currDir === Down || !canMove(this.x, this.y, Up)){
         upDist = veryLargeDistance;
     }
@@ -399,7 +399,7 @@ Ghost.prototype.moveToPacman = function(targetPacman) {
         upDist = this.getTestDistance(Up,targetPacman);
     }
 
-    //get distance - down
+    //haal afstand als hij naar omlaag beweegt
     if(currDir === Up || !canMove(this.x, this.y, Down)){
         downDist = veryLargeDistance;
     }
@@ -428,7 +428,7 @@ Ghost.prototype.moveToPacman = function(targetPacman) {
     this.moveOneStep();
 };
 
-//get the distance from this ghost to pacman as if it moved one step in the given direction
+// haal de afstand van de geest naar pacman als hij 1 stap in de gegeven richting zet
 Ghost.prototype.getTestDistance = function(dir, targetPacman) {
     var toReturn = 0;
     this.dir = dir;
@@ -465,7 +465,6 @@ Ghost.prototype.getTestDistance = function(dir, targetPacman) {
     return toReturn;
 };
 
-//make random move at intersection
 Ghost.prototype.randomMove = function() {
     var nextDir =  parseInt(Math.random()*4)+1;
     while(true){

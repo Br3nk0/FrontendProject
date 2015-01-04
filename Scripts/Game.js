@@ -13,13 +13,13 @@ var Wall_Width = 3;
 var numRows = Canvas_Width/Grid_Height;
 var numCols = Canvas_Height/Grid_Width;
 
-// colors for UI & Pacman
+// kleuren voor de UI en pacman
 var Bg_Color = "black";
 var Border_Color = "blue";
 var Bean_Color= "white";
 var Pacman_Color = "yellow";
 
-// colors for ghost
+// kleuren voor de geesten
 var Red = "red";
 var Pink = "#ff9cce";
 var Cyan = "#00ffde";
@@ -27,13 +27,13 @@ var Orange = "#ffb847";
 var Weak_Color = "#0031ff";
 var Blinking_Color = "white";
 
-// size of sprites
+// grootte van de sprites
 var Normal_Bean_Radius = 2;
 var Power_Bean_Radius= 5;
 var Pacman_Radius= 9;
 var Ghost_Radius = 9;
 
-// directions
+// richtingen
 var Up = 1;
 var Down = 2;
 var Left = 3;
@@ -55,12 +55,10 @@ var beansLeft = Max_Beans;
 var weakCounter;
 var Weak_Duration = 10000/timerDelay;
 
-
-//bean cases
 var Normal_Bean = 1
 var Power_Bean = 2;
 
-//spirtes instances
+//afbeeldingen instanties
 var welcomePacman;
 var welcomeBlinky;
 var welcomeInky;
@@ -71,122 +69,119 @@ var pinky;
 var clyde;
 var ghosts;
 
-//game state and map
+//game status en map
 var gameOn = false;
 var gamePaused = false;
 var maze = new Array(Canvas_Height/Grid_Height);
 var mazeContent = [
-//row1
+//rij 1
     [Left_Top, Top_Bottom, Top_Only, Top_Only, Top_Bottom,
         Top_Only, Top_Bottom, Right_Top, Left_Top, Top_Only,
         Top_Only, Top_Only, Top_Only, Top_Only, Top_Only,
         Top_Only, Right_Top],
-//row2
+//rij2
     [Left_Right, Left_Top_Right, Left_Bottom, Right_Only, Left_Top_Right,
         Left_Right, Closed_Grid, Left_Right, Left_Bottom, Bottom_Only,
         Bottom_Only, Bottom_Only, Bottom_Only, Bottom_Only, Empty_Grid,
         Empty_Grid, Right_Only],
-//row3
+//rij3
     [Left_Right, Left_Only, Top_Right_Bottom, Right_Bottom_Left, Left_Right,
         Left_Only, Top_Bottom, Empty_Grid, Top_Only, Top_Bottom,
         Top_Only, Top_Only, Top_Bottom, Right_Top, Left_Only,
         Empty_Grid, Right_Only],
-//row4
+//rij4
     [Left_Right, Left_Right, Left_Top_Right,Bottom_Left_Top, Right_Only, Left_Right,
         Left_Top_Right, Left_Bottom, Right_Only, Closed_Grid, Left_Only,
         Right_Bottom, Left_Top_Right, Left_Right, Left_Only,
         Empty_Grid, Right_Only],
-//row5
+//rij5
     [Left_Right, Right_Bottom_Left, Left_Only, Right_Top, Right_Bottom_Left,
         Left_Right, Left_Only, Top_Right_Bottom, Left_Bottom, Top_Only,
         Right_Bottom, Bottom_Left_Top, Right_Only, Left_Right, Left_Only,
         Empty_Grid, Right_Only],
-//row6
+//rij6
     [Left_Bottom, Top_Only, Bottom_Only, Bottom_Only, Top_Bottom,
         Right_Only, Left_Right, Left_Top_Right, Closed_Grid, Right_Bottom_Left,
         Closed_Grid, Left_Top_Right, Left_Right, Left_Right, Left_Bottom,
         Bottom_Only, Right_Bottom],
-//row7
+//rij7
     [Left_Top_Right, Left_Right, Left_Top, Top_Only, Right_Top,
         Left_Right, Right_Bottom_Left, Left_Only, Right_Top, Closed_Grid,
         Left_Top, Right_Only, Right_Bottom_Left, Left_Only, Right_Top,
         Closed_Grid, Left_Top_Right],
-//row8
+//rij8
     [Right_Bottom_Left, Left_Right, Left_Bottom, Bottom_Only, Right_Bottom,
         Left_Only, Top_Bottom, Empty_Grid, Bottom_Only, Top_Bottom,
         Bottom_Only, Empty_Grid, Top_Bottom, Bottom_Only, Bottom_Only,
         Top_Bottom, Right_Only],
-//row9
+//rij9
     [Bottom_Left_Top, Bottom_Only, Top_Bottom, Top_Bottom, Top_Bottom,
         Right_Only, Left_Top_Right, Left_Right, Left_Top, Top_Bottom,
         Right_Top, Left_Right, Left_Top, Top_Bottom, Top_Bottom,
         Top_Right_Bottom, Left_Right],
-//row10
+//rij10
     [Left_Top, Top_Only, Top_Only, Right_Top, Left_Top_Right,Left_Right,
         Left_Right, Left_Right, Left_Right, Left_Top_Right, Left_Right,
         Left_Right, Left_Right, Left_Top, Top_Only, Top_Only,
         Right_Only],
-//row11
+//rij11
     [Left_Only, Empty_Grid, Empty_Grid, Right_Only, Right_Bottom_Left,
         Left_Right, Right_Bottom_Left, Left_Right, Left_Right, Left_Right,
         Left_Right, Left_Right, Left_Right, Left_Bottom, Bottom_Only,
         Bottom_Only, Right_Only],
-//row12
+//rij12
     [Left_Only, Empty_Grid, Empty_Grid, Right_Only, Left_Top,
         Bottom_Only, Top_Only, Right_Bottom, Left_Right, Left_Right,
         Left_Right, Left_Right, Left_Only, Top_Only, Top_Bottom,
         Top_Right_Bottom, Left_Right],
-//row13
+//rij13
     [Left_Only, Empty_Grid, Empty_Grid, Right_Only, Left_Right,
         Left_Top_Right, Left_Right, Bottom_Left_Top, Right_Bottom, Left_Right,
         Right_Bottom_Left, Left_Right, Left_Bottom, Right_Bottom, Left_Top,
         Top_Bottom, Right_Only],
-//row14
+//rij14
     [Left_Only, Empty_Grid, Empty_Grid, Right_Only, Left_Right,
         Left_Right, Left_Bottom,Top_Only, Top_Bottom, Bottom_Only, Top_Only,
         Bottom_Only, Top_Bottom, Top_Bottom, Right_Bottom, Left_Top_Right,
         Left_Right],
-//row15
+//rij15
     [Left_Only, Empty_Grid, Empty_Grid, Right_Only, Left_Right,
         Left_Only, Right_Top, Left_Right, Left_Top, Right_Top,
         Left_Right, Bottom_Left_Top,Top_Bottom, Top_Bottom, Top_Bottom,
         Right_Only, Left_Right],
-//row16
+//rij16
     [Left_Only, Empty_Grid, Empty_Grid, Right_Only, Left_Right,
         Left_Bottom, Right_Bottom, Left_Right, Left_Bottom, Right_Bottom,
         Left_Only, Top_Bottom, Top_Bottom, Top_Bottom, Right_Top,
         Right_Bottom_Left, Left_Right],
-//row17
+//rij17
     [Left_Bottom, Bottom_Only, Bottom_Only, Right_Bottom, Left_Bottom,
         Top_Bottom, Top_Bottom, Bottom_Only, Top_Bottom, Top_Bottom,
         Right_Bottom, Bottom_Left_Top, Top_Bottom, Top_Right_Bottom, Left_Bottom,
         Top_Bottom, Right_Bottom]
 ];
 
-// grids that don't redraw
+// grid dat niet hertekent wordt
 var staticGrids = [];
 var staticGridsIndex = 0;
 
 
-// start location of pacman
+// start locatie van pacman
 var pacmanStartLoc = [4,9];
 
-// grids with no beans
+// plaats op het grid waar er geen bonen zijn
 var noBean = [pacmanStartLoc,[2,2],[3,3],[8,9],[1,6],[4,7],[5,8],[6,9],[5,10],[4,11],[3,9],[12,7],[6,15]];
 var noBeanIndex=noBean.length;
 
 
-// power beans in maze
+// power bonen in het grid
 var powerBeans = [[0,0], [2,13], [16,4], [16,16], [7,9],[2,5], [14,10]];
 
 
-// ghost house
+// huis van de geesten
 var ghostHouse = [];
 var ghostHouseIndex = 0;
-/*======================END GLOBAL VARs====================*/
 
-
-/*====================Initialization Methods==============*/
 
 function initCanvas(width, height){
     if(width===undefined || !(width instanceof Number)){
@@ -200,14 +195,14 @@ function initCanvas(width, height){
     ctx.fillRect(0,0,Canvas_Width,Canvas_Height);
 }
 
-// draw maze, print instruction on lower-left corner, show lives on top-right corner
+// teken het grid, de instructies links onderaan en het aantal levens rechtsboven
 function initMaze(){
     for(var i=0; i<maze.length; i++){
         var oneRow = new Array(Canvas_Width/Grid_Width);
         maze[i] = oneRow;
     }
 
-    // draw maze with full beans
+    // teken het grid vol met bonen
     for( var row = 0; row < Canvas_Height/Grid_Height; row++){
         for(var col = 0; col < Canvas_Width/Grid_Width; col++){
             var beanType = Normal_Bean;
@@ -218,7 +213,7 @@ function initMaze(){
         }
     }
 
-    //overwrite beans that shouldn't ecist
+    //overschrijf de bonen die niet bestaan
     for(var i=0; i<noBean.length; i++){
         var x = noBean[i][0];
         var y = noBean[i][1];
@@ -226,7 +221,7 @@ function initMaze(){
         maze[x][y].draw();
     }
 
-    // draw power beans
+    // teken de power bonen
     for(var i=0; i<powerBeans.length;i++){
         var x = powerBeans[i][0];
         var y = powerBeans[i][1];
@@ -245,7 +240,7 @@ function initFields () {
     }
 
 
-    //fill up staticGrids[]
+    //vul op met statische grids deze bevatten geen bonen
     for (var i=0; i<2; i++){
         for (var j=8; j<17; j++){
             staticGrids[staticGridsIndex]=[i,j];
@@ -265,7 +260,6 @@ function initFields () {
         }
     }
 
-    //fill up noBean[]
     for(var i=0; i<2; i++){
         for(var j=8; j<17; j++){
             noBean[noBeanIndex]=[i,j];
@@ -388,11 +382,8 @@ function initFields () {
     }
 
 }
-/*================END Initialization Methods==============*/
 
-
-/*====================Util Methods================*/
-//draw a circle
+//teken een cirkel
 function circle(ctx, cx, cy, radius) {
 
     ctx.beginPath();
@@ -401,7 +392,7 @@ function circle(ctx, cx, cy, radius) {
 
 }
 
-//get opposite direction
+//haal de tegengestelde direction op
 function oppositeDir (dir) {
     switch(dir){
         case Up:
@@ -507,7 +498,7 @@ function yOnGridCenter (x) {
     return ((x - Grid_Height/2) % Grid_Height) === 0;
 }
 
-//see if sprite can move one more step at the given (x,y) facing the given direction
+// kijken of de sprite nog 1 stap meer kan zetten in de gegeven positie (x,y)
 function canMove (x,y,dir) {
     if(!onGridCenter(x,y)){
         return true;
@@ -554,18 +545,15 @@ function canMove (x,y,dir) {
     }
     return canMove;
 }
-/*=================END Util Methods================*/
 
 
-/*=================UI Update Methods===============*/
-
-// draw instructions
+// teken instructies
 function printInstruction () {
     ctx.fillStyle = "white";
     ctx.font="12px monospace";
     ctx.textAlign = "left";
 
-    var txt = "WELCOME TO \nPACMAN!\n\n\nArrow keys or\nWASD to move\n\nQ to pause\nE to resume\nR to restart";
+    var txt = "WELCOME TO \nPACMAN!\n\n\nQZSD to move\n\nP to pause\nE to resume\nR to restart";
     var x = 12;
     var y = Canvas_Height-200;
     var lineheight = 15;
@@ -585,7 +573,7 @@ function printInstruction () {
 
 }
 
-//draw lives on top-right corner
+//teken de levens rechtsboven
 function showLives(){
     ctx.fillStyle="black";
     ctx.fillRect(Canvas_Width-80, 10, 70, 30);
@@ -596,7 +584,7 @@ function showLives(){
 
 }
 
-//show welcome screen
+//toon het startscherm
 function welcomeScreen(){
 
     gameOn = false;
@@ -623,7 +611,7 @@ function welcomeScreen(){
     Interval = setInterval(updateWelcomeScreen, timerDelay*2);
 }
 
-//welcome screen animation
+//animatie van het startscherm
 function updateWelcomeScreen () {
     ctx.fillStyle = "black";
     ctx.fillRect(0, Canvas_Height/2, Canvas_Width,140);
@@ -636,7 +624,7 @@ function updateWelcomeScreen () {
 }
 
 
-//show || update score
+//toon of update de score
 function showScore(){
     ctx.fillStyle="black";
     ctx.fillRect(Canvas_Width-250, 10, 190, 40);
@@ -646,16 +634,16 @@ function showScore(){
     ctx.fillText("score: " + parseInt(score), Canvas_Width-250, 37);
 }
 
-//show win message
+//toon de win boodschap
 function winMessage(){
-    //draw popup
+    //teken de popup
     ctx.fillStyle = "black";
     ctx.strokeStyle = "green";
     ctx.lineWidth=5;
     ctx.fillRect(Canvas_Width/2-150, Canvas_Height/2-40, 300, 100);
     ctx.strokeRect(Canvas_Width/2-150, Canvas_Height/2-40, 300, 100);
 
-    //write message
+    //schrijf de boodschap
     ctx.textAlign="center";
     ctx.fillStyle = "white";
     ctx.font = "16px monospace";
@@ -664,16 +652,16 @@ function winMessage(){
     ctx.fillText("press R to play again", Canvas_Height/2, Canvas_Height/2+28);
 }
 
-//show lose message
+//toon game over boodschap
 function loseMessage(){
-    //draw popup
+    //teken de popup
     ctx.fillStyle = "black";
     ctx.strokeStyle = "red";
     ctx.lineWidth=5;
     ctx.fillRect(Canvas_Width/2-100, Canvas_Height/2-40, 200, 100);
     ctx.strokeRect(Canvas_Width/2-100, Canvas_Height/2-40, 200, 100);
 
-    //write message
+    //schrijf de boodschap
     ctx.textAlign="center";
     ctx.fillStyle = "red";
     ctx.font = "26px monospace";
@@ -682,7 +670,7 @@ function loseMessage(){
     ctx.fillText("press R to play again", Canvas_Height/2, Canvas_Height/2+28);
 }
 
-//update canvas for each frame. 
+//update canvas elke frame
 function updateCanvas() {
     restartTimer++;
     if (gameOver()===true){
@@ -750,7 +738,7 @@ function updateCanvas() {
     }
 }
 
-//try to eat a bean
+//probeer een boon te eten
 function eatBean () {
     if(onGridCenter(mrPacman.x, mrPacman.y)){
         if(maze[mrPacman.getRow()][mrPacman.getCol()].beanType===Normal_Bean){
@@ -763,7 +751,7 @@ function eatBean () {
             showScore();
             beansLeft--;
 
-            //ghosts enter weak mode
+            //geesten krijgen zwakke modus
             for(var i=0; i<ghosts.length; i++){
                 ghosts[i].isWeak=true;
             }
@@ -774,7 +762,7 @@ function eatBean () {
     }
 }
 
-//try to eat a weak ghost
+//probeer een zwakke geest te eten
 function eatGhost () {
     for(var i=0; i<ghosts.length; i++){
         if(Math.abs(mrPacman.x-ghosts[i].x)<=5 && Math.abs(mrPacman.y-ghosts[i].y)<=5
@@ -802,7 +790,7 @@ function pacmanWon(){
     return beansLeft === 0;
 }
 
-//Show a count down each time the game starts
+//toon countdown elke keer het spel start
 function countDown () {
     ctx.fillStyle = "black";
     ctx.fillRect(Canvas_Height-85, 70, 80,80);
@@ -833,28 +821,21 @@ function countDown () {
         }, 1000);
     }, 1000);
 }
-/*==================END UI Update Methods================*/
 
 
-/*==================Game Control Methods===================*/
-//listen to keyDown event
+//luisteren naar het key down event
 function onKeyDown (event) {
     var keycode = event.keyCode;
-    var pauseCode = 81; //q to pause
-    var continueCode = 69; //e to resume
-    var restartCode = 82; //r to restart
-    var godModeCode = 71; //g to enter god mode
+    var pauseCode = 80; //p pause
+    var continueCode = 69; //e  resume
+    var restartCode = 82; //r restart
+    var godModeCode = 71; //g enter god mode
 
     // wasd
-    var wCode = 87;
-    var aCode = 65;
+    var wCode = 90;
+    var aCode = 81;
     var sCode = 83;
     var dCode = 68;
-    //arrow keys
-    var leftCode = 37;
-    var upCode = 38;
-    var rightCode = 39;
-    var downCode = 40;
 
     //start game
     if(!gameOn){
@@ -894,7 +875,7 @@ function onKeyDown (event) {
 
         //restart game
         if( keycode === restartCode && restartTimer > 0) {
-            //can't restart game if a game was just refreshed.
+            //kan niet restarten als het spel juist gerefreshed is
             restartTimer = 0;
             clearInterval(Interval);
             gameOn = true;
@@ -906,24 +887,20 @@ function onKeyDown (event) {
             run();
         }
 
-        //4-way controls
+        //controls
         switch(keycode){
-            case upCode:
             case wCode:
                 mrPacman.nextDir = mrPacman.dir===Up ? undefined: Up;
                 break;
 
-            case rightCode:
             case dCode:
                 mrPacman.nextDir = mrPacman.dir===Right? undefined : Right;
                 break;
 
-            case leftCode:
             case aCode:
                 mrPacman.nextDir = mrPacman.dir === Left? undefined : Left;
                 break;
 
-            case downCode:
             case sCode:
                 mrPacman.nextDir = mrPacman.dir === Down? undefined : Down;
                 break;
@@ -935,7 +912,7 @@ function onKeyDown (event) {
     }
 }
 
-//run the game. Create mrPacman and 4 ghosts. Reset their positions.
+//run het spel maak pacman en 4 geesten en reset hun posities
 function run(isGodMode) {
     showScore();
 
@@ -967,11 +944,8 @@ function run(isGodMode) {
     mrPacman.draw();
     countDown();
 }
-/*===============END Game Control Methods===================*/
 
 
-
-/*-----------GAME START-----------*/
 initFields();
 initCanvas(Canvas_Width, Canvas_Height);
 canvas.addEventListener('keydown', onKeyDown, false);

@@ -203,6 +203,7 @@
                 <p>{{media[10].Description}}</p>
             </div>
         </div>
+
         <div class="pc"id="jaar92">
             <div class="jaartal">
                 <p class="naam fadeIn">{{media[11].Name}}</p>
@@ -214,6 +215,15 @@
                 <p>{{media[11].Description}}</p>
             </div>
         </div>
+            <div class="tekstVerwerker">
+                <ul id="buttons">
+                    <li><button class="styleBtn" id="bold">B</button></li>
+                    <li><button class="styleBtn" id="italic">I</button></li>
+                    <li><button class="styleBtn" id="line">U</button></li>
+                </ul>
+                <textarea id="verwerker" placeholder="Type here your text"></textarea>
+
+            </div>
         <div class="pc"id="jaar98">
             <div class="jaartal">
                 <p  class="naam fadeIn">{{media[12].Name}}</p>
@@ -251,7 +261,7 @@
                 <p>{{media[14].Description}}</p>
             </div>
         </div>
-        <div class="pc">
+        <div class="pc" id="hide">
             <img ng-src="{{media[14].Picture}}" class="ipad" alt="iPad" title="iPad met google maps">
             <div id="map"><article></article></div>
         </div>

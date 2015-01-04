@@ -357,7 +357,7 @@ position: fixed;
 }.blad{
      margin-top:258px;
      background-color: white;
-     margin-left:441px;
+     margin-left:556px;
      position:absolute;
      width:277px;
      height:0px;
@@ -371,13 +371,13 @@ position: fixed;
     height:220px;
     margin-top:38px;
     background-color: white;
-    margin-left:441px;
+    margin-left:556px;
     position:absolute;
     width:277px;
 }
 #print{
     position:absolute;
-    margin-left:315px;
+    margin-left:432px;
     margin-top:396px;
 
 }
@@ -385,8 +385,11 @@ position: fixed;
     width:365px;
     height:40px;
 }
-#print > button{
-    margin-left:20px;
+#printen{
+    margin-left:50px;
+    height:30px;
+    width:75px;
+
 }
 #game{
     margin-top:120px;
@@ -441,14 +444,133 @@ position: fixed;
 .pc .ipad{
     max-width:836px;
     height:545px;
-    margin-right:125px;
+    margin-right:190px;
 }
 #map{
     position:absolute;
-    margin-left:320px;
+    margin-left:370px;
     margin-top:104px;
 
 }
 #mapcontainer{
     height:500px;
+}
+.tekstVerwerker{
+    height:610px;
+    width:800px;
+    margin-left:auto;
+    margin-right:auto;
+    border:50px solid gray;
+    background-color:white;
+}
+#buttons{
+    list-style: none;
+}
+.styleBtn{
+    float:left;
+    width:40px;
+    height:40px;
+    margin-top:15px;
+    margin-right:20px;
+}
+#bold{
+    font-weight:bolder;
+}
+#italic{
+    font-style:italic;
+}
+#line{
+    text-decoration:underline;
+}
+.bold{
+    font-weight:bolder;
+}
+.italic{
+    font-style:italic;
+}
+.line{
+    text-decoration:underline;
+}
+textarea{
+    width: 700px;
+    height: 439px;
+    margin-top:16px;
+}
+
+/*@media screen and (max-width: 450px){
+    #project{
+        font-size:12px;
+    }
+    h1{
+        font-size:16px;
+    }
+    #infojourneytekst{
+        width:100%;
+    }
+    p{
+        width:100%;
+    }
+    .naam{
+        font-size:25px;
+    }
+
+    .pc img{
+        margin-right:25px;
+    }
+    .info{
+        font-size:12px;
+        max-width:80%;
+        margin-left:45px;
+    }
+    .pc .hp{
+        max-width:300px;
+        margin-right:50px;
+        margin-top:200px;
+    }
+    .blad{
+        margin-top:295px;
+        background-color: white;
+        margin-left:125px;
+        position:absolute;
+        width:127px;
+        height:0px;
+    }
+    .bladGeprint{
+        -webkit-transition:  5s;
+        -moz-transition:  5s;
+        -ms-transition:  5s;
+        -o-transition: 5s;
+        transition: 5s;
+        height:95px;
+        margin-top:200px;
+        background-color: white;
+        margin-left:125px;
+        position:absolute;
+        width:127px;
+
+    }
+    #print{
+        position:absolute;
+        margin-left:68px;
+        margin-top:353px;
+
+    }
+    #print > input{
+        width:165px;
+        height:20px;
+    }
+    #printen{
+        margin-left:20px;
+        height:20px;
+        width:45px;
+
+    }
+    #locatie {
+        margin-top: 74px;
+        padding-right: 29px;
+        padding-left: 70px;
+    }
+    .pc .ipad, .schermPacman, #game,#pacman{
+        visibility: hidden;
+    }
 }

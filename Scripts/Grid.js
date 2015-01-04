@@ -1,7 +1,7 @@
 var id = -1;
 
-//wall cases
-var Cross_Rd = -1;//no wall
+//muren
+var Cross_Rd = -1;//geen muur
 var Left_Only = 0;
 var Top_Only = 1;
 var Right_Only = 2;
@@ -177,7 +177,7 @@ Grid.prototype.makeCrossRoad = function() {
 };
 
 
-//draw a bean at the center of this grid
+//teken een boon in het center van dat grid
 Grid.prototype.drawBean = function() {
     var beanType = this.beanType;
     var centerX = this.x + Grid_Width/2;
@@ -195,7 +195,7 @@ Grid.prototype.drawBean = function() {
         circle(ctx, centerX, centerY, Power_Bean_Radius);
     }
     else{
-        //unkwon bean type
+
         return;
     }
 
