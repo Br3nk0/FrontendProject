@@ -286,6 +286,7 @@ position: fixed;
 }
 
 .pc {
+    padding-top:2vh;
     height: 90vh;
     margin-top: 50px;
 }
@@ -349,6 +350,43 @@ position: fixed;
     height: auto;
     float: right;
     margin-right: 50px;
+}
+.pc > .hp{
+    max-width:650px;
+    margin-right:250px;
+}.blad{
+     margin-top:258px;
+     background-color: white;
+     margin-left:441px;
+     position:absolute;
+     width:277px;
+     height:0px;
+ }
+.bladGeprint{
+    -webkit-transition:  5s;
+    -moz-transition:  5s;
+    -ms-transition:  5s;
+    -o-transition: 5s;
+    transition: 5s;
+    height:220px;
+    margin-top:38px;
+    background-color: white;
+    margin-left:441px;
+    position:absolute;
+    width:277px;
+}
+#print{
+    position:absolute;
+    margin-left:315px;
+    margin-top:396px;
+
+}
+#print > input{
+    width:365px;
+    height:40px;
+}
+#print > button{
+    margin-left:20px;
 }
 #game{
     margin-top:120px;

@@ -28,7 +28,10 @@ $(document).ready(function () {
 var scrollPos = $(document).scrollTop(),
     showPacman = document.getElementById("myCanvas"),
     script = document.createElement('script'),
-    toonKaart = document.getElementById("locatie");
+    toonKaart = document.getElementById("locatie"),
+    printen = document.getElementById("printen"),
+    blad = document.getElementsByClassName("blad"),
+    tekst = document.getElementById("tekst");
 
 function onScroll(event){
 
@@ -64,4 +67,8 @@ toonKaart.addEventListener("click",function(){
     script.setAttribute('type', 'text/javascript');
     script.setAttribute('src', '../Scripts/googlemaps.js');
     document.head.appendChild(script);
+})
+printen.addEventListener("click",function(){
+    blad[0].className="bladGeprint";
+    document.getElementsByClassName("bladGeprint")[0].innerHTML= tekst.value;
 })

@@ -504,7 +504,6 @@ img.wiggle-me:hover{-ms-animation:wiggle .3s 2;-moz-animation:wiggle .3s 2;-webk
     position:relative;
     margin-left:585px;
     margin-top:-170px;
-    -webkit-transform:rotate(8.5deg);
 
 }
 #print > input{
