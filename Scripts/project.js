@@ -25,9 +25,13 @@ $(document).ready(function () {
         });
     });
 });
+var scrollPos = $(document).scrollTop(),
+    showPacman = document.getElementById("myCanvas"),
+    script = document.createElement('script'),
+    toonKaart = document.getElementById("locatie");
 
 function onScroll(event){
-    var scrollPos = $(document).scrollTop();
+
     $('#jaartallen a').each(function () {
         var currLink = $(this);
         var refElement = $(currLink.attr("href"));
@@ -53,5 +57,11 @@ function drop(ev) {
     ev.preventDefault();
     var data = ev.dataTransfer.getData("image");
     ev.target.appendChild(document.getElementById(data));
-    window.location.href='Pacman.html'
+    showPacman.style.display="block";
+    window.location.hash = '#myCanvas';
 }
+toonKaart.addEventListener("click",function(){
+    script.setAttribute('type', 'text/javascript');
+    script.setAttribute('src', '../Scripts/googlemaps.js');
+    document.head.appendChild(script);
+})

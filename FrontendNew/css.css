@@ -206,7 +206,7 @@ body > footer > div > div > p {
 
 #infojourney {
 
-    background-image: url("img/journeybackground.png"); no-repeat top center fixed;
+    background-image: url("img/journeybackground.png"); /*no-repeat top center fixed;*/
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -261,7 +261,7 @@ position: fixed;
     border-bottom: 3px dotted #ffffff;
 
 }
-#jaartalle ul > li {
+#jaartallen ul > li {
     text-decoration: none;
 }
 #jaartallen > li{
@@ -349,4 +349,68 @@ position: fixed;
     height: auto;
     float: right;
     margin-right: 50px;
+}
+#game{
+    margin-top:120px;
+    margin-right:-225px;
+    width:80px;
+    height:45px;
+    float:right;
+    display:inline;
+    font-size:10px;
+    color:white;
+    text-align: center;
+}
+#pacman{
+    width:60px;
+    height:27px;
+    position:absolute;
+    margin-left:650px;
+    margin-top:150px;
+}
+.schermPacman{
+    height:610px;
+    width:800px;
+    margin-left:auto;
+    margin-right:auto;
+    border:50px solid white;
+    background-color:black;
+}
+#myCanvas{
+    display:none;
+    margin-left:95px;
+}
+#locatie :hover, #pacman:hover{
+   cursor: pointer;
+}
+#locatie{
+    float: right;
+    margin-right: -315px;
+    margin-top: 75px;
+    background-color: gray;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-right: 15px;
+    padding-left: 65px;
+    height: 192px;
+}
+#locatie > img{
+    margin-top:10px;
+}
+#locatie > p{
+    margin-left:-20px;
+}
+.pc .ipad{
+    max-width:836px;
+    height:545px;
+    margin-right:125px;
+}
+#map{
+    position:absolute;
+    margin-left:320px;
+    margin-top:104px;
+
+}
+#mapcontainer{
+    height:500px;
 }

@@ -517,7 +517,7 @@ img.wiggle-me:hover{-ms-animation:wiggle .3s 2;-moz-animation:wiggle .3s 2;-webk
 
 }
 #game{
-    position: relative;
+    position: absolute;
     width:80px;
     height:45px;
     float:left;

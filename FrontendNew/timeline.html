@@ -113,17 +113,24 @@
             </div>
         </div>
         <div class="pc"id="jaar79">
-            <img src="Images/pacman.png" id="pacman" draggable="true" ondragstart="drag(event)">
+
             <div class="jaartal">
                 <p  class="naam fadeIn">{{media[4].Name}}</p>
                 <p class="year">{{media[4].Year}}</p>
 
             </div>
+            <img src="Images/pacman.png" id="pacman" draggable="true" ondragstart="drag(event)">
             <img ng-src="{{media[4].Picture}}">
             <div id="game" ondrop="drop(event)" ondragover="allowDrop(event)"> Drag pacman in here</div>
             <div class="info slideUp">
                 <p>{{media[4].Description}}</p>
             </div>
+        </div>
+        <div class="pc">
+            <div class="schermPacman">
+                <canvas id="myCanvas"width="510" height="510">
+
+            </canas>
         </div>
         <div class="pc"id="jaar80">
             <div class="jaartal">
@@ -219,7 +226,7 @@
                 <p  class="year">{{media[13].Year}}</p>
 
             </div>
-            <img ng-src="{{media[13].Picture}}">
+            <img ng-src="{{media[13].Picture}}" alt="Macbook" title="Macbook">
             <div class="info slideUp">
                 <p>{{media[13].Description}}</p>
             </div>
@@ -231,13 +238,18 @@
                 <p  class="year">{{media[14].Year}}</p>
 
             </div>
-            <img ng-src="{{media[14].Picture}}">
-            <div id="map"><article></article></div>
+            <img ng-src="{{media[14].Picture}}" alt="iPad" title="iPad">
+            <div id="locatie">
+            <img src="img/map.png" alt="Icon Location" title="Get your location">
+            <p>Click to show location on iPad</p></div>
             <div class="info slideUp">
                 <p>{{media[14].Description}}</p>
             </div>
         </div>
-
+        <div class="pc">
+            <img ng-src="{{media[14].Picture}}" class="ipad" alt="iPad" title="iPad met google maps">
+            <div id="map"><article></article></div>
+        </div>
 
 </div>
 
@@ -267,8 +279,12 @@
     <script src="../Src/app.js"></script>
     <script src="../Src/Controllers/MediaController.js"></script>
     <script src="../Scripts/project.js"></script>
+    <script src="../Scripts/Pacmans.js"></script>
+    <script src="../Scripts/Ghost.js"></script>
+    <script src="../Scripts/Grid.js"></script>
+    <script src="../Scripts/Game.js"></script>
     <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>
-    <script src="../Scripts/googlemaps.js"></script>
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 
 </body>
