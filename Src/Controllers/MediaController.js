@@ -1,9 +1,6 @@
 /**
  * Created by BrenkoD on 25/11/2014.
  */
-
-(function(){
-
     var MediaController = function($scope, $http){
         //scope eigenschappen
         $scope.media=[];
@@ -18,9 +15,8 @@
 
         };
         //methods
-        var data = $http.get('./Data/data.json').then(onDataDownloaded);
+        $http.get('./Data/data.json').then(onDataDownloaded);
     };
-    var app = angular.module("app");
-    app.controller("MediaController", ["$scope","$http",MediaController]);
-})();
+
+
 
