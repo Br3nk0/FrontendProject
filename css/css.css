@@ -755,6 +755,29 @@ textarea{
     .navbar .navbar-nav {
         float: right;
     }
+    #jaartallen {
+        width: 100%;
+    }
+    #jaartallen > li {
+        float: left;
+        padding: 0px;
+        padding-top: px;
+        width: 50px;
+        height: 43px;
+        background-color: #db224b;
+        background-image: url("../Images/backgroundtimeline.png");
+        background-position: bottom;
+        background-repeat: repeat-x;
+        text-align: center;
+        vertical-align: text-top;
+        list-style: none;
+        transition: height 0.5s;
+        -webkit-transition: height 0.5s;
+    }
+    .container {
+        padding-right: 5px;
+        padding-left: 5px;
+    }
 
     #project {
         font-size: 12px;
@@ -763,9 +786,12 @@ textarea{
     h1 {
         font-size: 16px;
     }
-
+    .clickyear{
+        width:100%;
+    }
     #infojourneytekst {
         width: 100%;
+        font-size: 11px;
     }
 
     p {
