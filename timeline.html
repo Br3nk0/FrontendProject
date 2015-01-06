@@ -83,11 +83,11 @@
 
             </div>
             <img ng-src="{{media[1].Picture}}">
-            
 
             <div id="blad"></div>
             <div class="info slideUp">
                 <p>{{media[1].Description}}</p>
+                <p><h1><a href="#printer">Click to test</a></h1></p>
             </div>
         </div>
         <div class="pc" id="printer">
@@ -101,7 +101,7 @@
                 <p class="year">{{media[2].Year}}</p>
 
             </div>
-            <img ng-src="{{media[2].Picture}}">
+            <img class="autoheight" ng-src="{{media[2].Picture}}">
             <div class="info slideUp">
                 <p>{{media[2].Description}}</p>
             </div>
@@ -112,7 +112,7 @@
                 <p class="year">{{media[3].Year}}</p>
 
             </div>
-            <img ng-src="{{media[3].Picture}}">
+            <img class="autoheight" ng-src="{{media[3].Picture}}">
             <div class="info slideUp">
                 <p>{{media[3].Description}}</p>
             </div>
@@ -132,6 +132,8 @@
                 <p>{{media[4].Description}}</p> <img src="Images/pacman.png" id="pacman" draggable="true" ondragstart="drag(event)"><p><h1 class="test"> Drag the casette in the pc to play a game </h1></p>
             </div>
         </div>
+
+
         <div class="pc" id="pac">
             <div class="schermPacman">
                 <canvas id="myCanvas"width="510" height="510">
@@ -200,7 +202,7 @@
                 <p  class="year">{{media[10].Year}}</p>
 
             </div>
-            <img ng-src="{{media[10].Picture}}">
+            <img class="autoheight" ng-src="{{media[10].Picture}}">
             <div class="info slideUp">
                 <p>{{media[10].Description}}</p>
             </div>
@@ -267,12 +269,12 @@
             <img ng-src="{{media[14].Picture}}" alt="iPad" title="iPad">
             <div id="locatie">
             <img src="Images/map.png" alt="Icon Location" title="Get your location">
-            <p>Click to show location on iPad</p></div>
+            <p><a href="#map"> Click to show location on iPad</a></p></div>
             <div class="info slideUp">
                 <p>{{media[14].Description}}</p>
             </div>
         </div>
-        <div class="pc" id="hide">
+        <div  class="pc" id="hide">
 
             <div id="map"><article id="article"></article></div>
         </div>
