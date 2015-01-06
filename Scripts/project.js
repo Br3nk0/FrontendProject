@@ -35,7 +35,8 @@ var scrollPos = $(document).scrollTop(),
     bold = document.getElementById("bold"),
     italic= document.getElementById("italic"),
     line = document.getElementById("line"),
-    verwerker = document.getElementById("verwerker");
+    verwerker = document.getElementById("verwerker"),
+    print = document.getElementById("print");
 
 function onScroll(event){
 
@@ -82,5 +83,6 @@ toonKaart.addEventListener("click",function(){
 })
 printen.addEventListener("click",function(){
     blad[0].className="bladGeprint";
+    print.id="printGeprint";
     document.getElementsByClassName("bladGeprint")[0].innerHTML= tekst.value;
 })

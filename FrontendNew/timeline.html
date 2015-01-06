@@ -37,11 +37,9 @@
 </nav>
 <div id="wrapper">
 
+    <div id="tijden" class="fixed">
 
-    <!--
-    <div id="tijdlijn" class="fixed">
-
-        <ul id="jaartallen">
+        <ul id="jaartal">
             <li><a href="timeline.html#jaar71" class="active" >1971</a></li>
             <li><a href="timeline.html#jaar72" >1972</a></li>
             <li><a href="timeline.html#jaar73" >1973</a></li>
@@ -61,7 +59,9 @@
         </ul>
     </div>
 
-    -->
+
+
+
  <div id="goback"> <a href="journey.html"><span class=" glyphicon glyphicon-chevron-left goback" aria-hidden="true"></span></a> </div>
     <div id="Content">
         <div class="pc" id="jaar71">
@@ -92,7 +92,6 @@
         </div>
         <div class="pc" id="printer">
             <div class="blad"></div>
-            <img  class="hp" src="Images/HP_9830.png" alt="HP9830" title="HP9830">
 
             <div id="print"><input id="tekst" type="text"><button id="printen">Print</button></div>
         </div>
@@ -125,18 +124,19 @@
                 <p class="year">{{media[4].Year}}</p>
 
             </div>
-            <img src="Images/pacman.png" id="pacman" draggable="true" ondragstart="drag(event)">
+            <!--<img src="Images/pacman.png" id="pacman" draggable="true" ondragstart="drag(event)">!-->
             <img ng-src="{{media[4].Picture}}">
+
             <div id="game" ondrop="drop(event)" ondragover="allowDrop(event)"> Drag pacman in here</div>
             <div class="info slideUp">
-                <p>{{media[4].Description}}</p>
+                <p>{{media[4].Description}}</p> <img src="Images/pacman.png" id="pacman" draggable="true" ondragstart="drag(event)"><p><h1 class="test"> Drag the casette in the pc to play a game </h1></p>
             </div>
         </div>
         <div class="pc" id="pac">
             <div class="schermPacman">
                 <canvas id="myCanvas"width="510" height="510">
 
-            </canas>
+            </canvas>
         </div>
             </div>
         <div class="pc"id="jaar80">
@@ -215,9 +215,10 @@
             <img ng-src="{{media[11].Picture}}">
             <div class="info slideUp">
                 <p>{{media[11].Description}}</p>
+                <p><h1 class="test"><a href="#tekstVerwerker">Click here to try the new texteditor</a></h1></p>
             </div>
         </div>
-
+            <div  id="tekstVerwerker" class="pc">
             <div class="tekstVerwerker">
                 <ul id="buttons">
                     <li><button class="styleBtn" id="bold">B</button></li>
@@ -228,6 +229,7 @@
 
             </div>
 
+        </div>
         <div class="pc"id="jaar98">
             <div class="jaartal">
                 <p  class="naam fadeIn">{{media[12].Name}}</p>
@@ -237,8 +239,13 @@
             <img ng-src="{{media[12].Picture}}">
             <div class="info slideUp">
                 <p>{{media[12].Description}}</p>
+                <p><h1 class="test"><a href="#google"> Click to try Google, it will change your life for ever!</a></h1></p>
             </div>
         </div>
+            <div id="google" class="pc">
+
+                <iframe  src="http://www.google.com/custom?q=&btnG=Search"></iframe>
+            </div>
         <div class="pc"id="jaar06">
             <div class="jaartal">
                 <p  class="naam fadeIn">{{media[13].Name}}</p>
@@ -266,25 +273,28 @@
             </div>
         </div>
         <div class="pc" id="hide">
-            <img ng-src="{{media[14].Picture}}" class="ipad" alt="iPad" title="iPad met google maps">
+
             <div id="map"><article id="article"></article></div>
         </div>
 
 </div>
 
     </div>
-<!-- Footer
-================================================== -->
 
-<footer class="navbar navbar-inverse navbar-fixed-bottom" role="navigation">
-    <div class="container" class="fadeIn">
-        <div class="navbar-brand">
-            <img src="img/logonmct.png">
+
+    <!-- Footer
+    ================================================== -->
+
+    <footer class="navbar navbar-inverse navbar-fixed-bottom" role="navigation">
+        <div class="container" class="fadeIn">
+            <div class="navbar-brand">
+                <img src="img/logonmct.png">
+            </div>
+            <div class="navbar-text pull-right">
+                <p>Made by Jolene Fouquaert en Brenko Demeyere</p>
+            </div>
         </div>
-        <div class="navbar-text pull-right">
-            <p>Made by Jolene Fouquaert en Brenko Demeyere</p>
-        </div>
-    </div>
+
 </footer>
 <!-- Bootstrap core JavaScript
 ================================================== -->

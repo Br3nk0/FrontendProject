@@ -7,9 +7,11 @@ $(window).scroll(function() {
         if (topOfWindow > winH ) {
             console.log("nu slide about in")
             $(this).addClass("pullUp");
+            $('#aboutli').addClass("active")
         }
         else {
             $(this).removeClass("pullUp");
+            $('#aboutli').removeClass("active")
         }
 
     });
