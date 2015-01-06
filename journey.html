@@ -1,165 +1,100 @@
+
 <!DOCTYPE html>
-<html ng-app="app">
+<html class="full" lang="en" >
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <title></title>
-    <link href="css/bootstrap-theme.css" rel ="stylesheet"/>
-    <link href="css/bootstrap.css" rel="stylesheet"/>
-    <link href="css/bootstrap-theme.css.map"/>
-    <link href="css/bootstrap.css.map"/>
-    <link href="css/project.css" rel="stylesheet"/>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>The History of the Computer</title>
+    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+    <script src="Scripts/animatiesscroll.js"></script>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/css.css" rel="stylesheet">
+    <link href="css/animation.css" rel="stylesheet">
+
 </head>
-<body ng-controller="MediaController">
-<nav id="mainNav" class="navbar navbar-fixed-top">
-    <div id="menuNav"class="btn-group">
-        <button id="menu" type="button" class="btn btn-default" data-toggle="dropdown" aria-expanded="false">
-            <span class="glyphicon glyphicon-th-list" aria-hidden="true"></span></span>
-        </button>
-        <ul id="dropdownMenu" class="dropdown-menu" role="menu">
-            <li class="active">Start the journey</a></li>
-            <li><a href="#">About us</a></li>
-            <li><a href="#">About project</a></li>
-        </ul>
+<body>
+<!-- Fixed navbar -->
+<nav><div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html"><img src="Images/brandinglogo.png"></a>
+        </div>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li ><a href="index.html#project">About</a></li>
+                <li class="active"><a  href="journey.html">Journey</a></li>
+                <li><a href="future.html">Future</a></li>
+            </ul>
+        </div><!--/.nav-collapse -->
     </div>
-
-    <ul id="jaartallen">
-        <li><a href="#jaar71" class="active" >1971</a></li>
-        <li><a href="#jaar72" >1972</a></li>
-        <li><a href="#jaar73" >1973</a></li>
-        <li><a href="#jaar77" >1977</a></li>
-        <li><a href="#jaar79" >1979</a></li>
-        <li><a href="#jaar80" >1980</a></li>
-        <li><a href="#jaar81" >1981</a></li>
-        <li><a href="#jaar83" >1983</a></li>
-        <li><a href="#jaar87" >1987</a></li>
-        <li><a href="#jaar89" >1989</a></li>
-        <li><a href="#jaar91" >1991</a></li>
-        <li><a href="#jaar92" >1992</a></li>
-        <li><a href="#jaar98" >1998</a></li>
-        <li><a href="#jaar06" >2006</a></li>
-        <li><a href="#jaar10" >2010</a></li>
-
-    </ul>
-    <a href="Index.html" id="journey" >
-        <p>THE EVOLUTION OF THE COMPUTER</p><img src="FrontendNew/Images/pc1.png"/>
-    </a>
+</div>
 </nav>
 
-    <div id="Content">
-        <div class="pc" id="jaar71">
-            <img src="{{media[0].Picture}}">
-            <div class="info">
-                <p>{{media[0].Description}}</p>
-            </div>
-        </div>
-        <div class="pc"id="jaar72">
+<div id="journey">
+<div id="infojourney">
 
-            <img src="{{media[1].Picture}}">
-            <div id="print"><input type="text"><button>Print</button></div>
-            <div id="blad"></div>
-            <div class="info">
-                <p>{{media[1].Description}}</p>
-            </div>
-        </div>
-        <div class="pc"id="jaar73">
-            <img src="{{media[2].Picture}}">
-            <div class="info">
-                <p>{{media[2].Description}}</p>
-            </div>
-        </div>
-        <div class="pc"id="jaar77">
-            <img src="{{media[3].Picture}}">
-            <div class="info">
-                <p>{{media[3].Description}}</p>
-            </div>
-        </div>
-        <div class="pc"id="jaar79">
-           <img src="FrontendNew/Images/pacman.png" id="pacman" draggable="true" ondragstart="drag(event)">
-
-            <img src="{{media[4].Picture}}">
-            <div id="game" ondrop="drop(event)" ondragover="allowDrop(event)"> Drag pacman in here</div>
-            <div class="info">
-                <p>{{media[4].Description}}</p>
-            </div>
-        </div>
-        <div class="pc"id="jaar80">
-            <img src="{{media[5].Picture}}">
-            <div class="info">
-                <p>{{media[5].Description}}</p>
-            </div>
-        </div>
-        <div class="pc"id="jaar81">
-            <img src="{{media[6].Picture}}">
-            <div class="info">
-                <p>{{media[6].Description}}</p>
-            </div>
-        </div>
-        <div class="pc"id="jaar83">
-            <img src="{{media[7].Picture}}">
-            <div class="info">
-                <p>{{media[7].Description}}</p>
-            </div>
-        </div>
-        <div class="pc"id="jaar87">
-            <img src="{{media[8].Picture}}">
-            <div class="info">
-                <p>{{media[8].Description}}</p>
-            </div>
-        </div>
-        <div class="pc"id="jaar89">
-            <img src="{{media[9].Picture}}">
-            <div class="info">
-                <p>{{media[9].Description}}</p>
-            </div>
-        </div>
-        <div class="pc"id="jaar91">
-            <img src="{{media[10].Picture}}">
-            <div class="info">
-                <p>{{media[10].Description}}</p>
-            </div>
-        </div>
-        <div class="pc"id="jaar92">
-            <img src="{{media[11].Picture}}">
-            <div class="info">
-                <p>{{media[11].Description}}</p>
-            </div>
-        </div>
-        <div class="pc"id="jaar98">
-            <img src="{{media[12].Picture}}">
-            <div class="info">
-                <p>{{media[12].Description}}</p>
-            </div>
-        </div>
-        <div class="pc"id="jaar06">
-            <img src="{{media[13].Picture}}">
-            <div class="info">
-                <p>{{media[13].Description}}</p>
-            </div>
-        </div>
-        <div class="pc" id="jaar10">
-
-            <img src="{{media[14].Picture}}">
-            <div id="map"><article></article></div>
-            <div class="info">
-                <p>{{media[14].Description}}</p>
-            </div>
-        </div>
-
+    <div id="infojourneytekst" class="fadeIn">
+        <h1> ENIAC THE BEGINING OF....</h1>
+    <p>ENIAC,Electronic Numerical Integrator And Computer was the first electronic general-purpose computer.
+        It was Turing-complete, digital, and capable of being reprogrammed to solve "a large class of numerical problems".
+        When ENIAC was announced in 1946 it was heralded in the press as a "Giant Brain". But The ENIAC wasn't for personal use.
+        The first Personal Computer, or PC was introduced in the seventies.</p>
     </div>
 
+</div>
 
-    <footer id="mainFooter" class="navbar navbar-fixed-bottom"></footer>
+<div id="tijdslijn" class="">
 
-<script src="Scripts/angular.js"></script>
-<script src="Scripts/angular-route.js"></script>
-<script src="Scripts/jquery-2.1.1.js"></script>
+    <p class="clickyear fadeIn" >- Click on a year -</p>
+
+    <ul id="jaartallen" class="pullUp">
+        <li><a href="timeline.html#jaar71" class="active" >1971</a></li>
+        <li><a href="timeline.html#jaar72" >1972</a></li>
+        <li><a href="timeline.html#jaar73" >1973</a></li>
+        <li><a href="timeline.html#jaar77" >1977</a></li>
+        <li><a href="timeline.html#jaar79" >1979</a></li>
+        <li><a href="timeline.html#jaar80" >1980</a></li>
+        <li><a href="timeline.html#jaar81" >1981</a></li>
+        <li><a href="timeline.html#jaar83" >1983</a></li>
+        <li><a href="timeline.html#jaar87" >1987</a></li>
+        <li><a href="timeline.html#jaar89" >1989</a></li>
+        <li><a href="timeline.html#jaar91" >1991</a></li>
+        <li><a href="timeline.html#jaar92" >1992</a></li>
+        <li><a href="timeline.html#jaar98" >1998</a></li>
+        <li><a href="timeline.html#jaar06" >2006</a></li>
+        <li><a href="timeline.html#jaar10" >2010</a></li>
+
+    </ul>
+</div>
+
+
+
+</div>
+
+<!-- Footer
+================================================== -->
+
+<footer class="navbar navbar-inverse navbar-fixed-bottom" role="navigation">
+    <div class="container" class="fadeIn">
+        <div class="navbar-brand">
+            <img src="Images/logonmct.png">
+        </div>
+        <div class="navbar-text pull-right">
+            <p>Made by Jolene Fouquaert en Brenko Demeyere</p>
+        </div>
+    </div>
+</footer>
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 <script src="Scripts/bootstrap.min.js"></script>
-<script src="Scripts/Media.js"></script>
-<script src="Src/Controllers/MediaController.js"></script>
-<script src="Scripts/project.js"></script>
-<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
-<script src="Scripts/googlemaps.js"></script>
 </body>
 </html>
