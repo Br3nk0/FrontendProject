@@ -1,7 +1,6 @@
 /**
  * Created by demeyerebrenko on 22/12/14.
  */
-
 function success(position) {
     var mapcanvas = document.createElement('div');
     mapcanvas.id = 'mapcontainer';

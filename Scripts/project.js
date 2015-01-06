@@ -77,8 +77,9 @@ line.addEventListener("click",function(){
     verwerker.className="line";
 })
 toonKaart.addEventListener("click",function(){
+    script.setAttribute('type', 'text/javascript');
     script.setAttribute('src', '../Scripts/googlemaps.js');
-    document.body.appendChild(script);
+    document.head.appendChild(script);
 })
 printen.addEventListener("click",function(){
     blad[0].className="bladGeprint";
