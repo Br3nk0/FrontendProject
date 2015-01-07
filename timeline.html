@@ -8,7 +8,7 @@
     <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
     <script src="Scripts/animatiesscroll.js"></script>
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/css.css" rel="stylesheet">
+    <link href="css/css.min.css" rel="stylesheet">
     <link href="css/animation.css" rel="stylesheet">
 
 </head>
@@ -66,27 +66,27 @@
     <div id="Content">
         <div class="pc" id="jaar71">
             <div class="jaartal">
-                <p class="naam fadeIn">{{media[0].Name}}</p>
-                <p class="year">{{media[0].Year}}</p>
+                <p class="naam fadeIn" ng-bind="media[0].Name"></p>
+                <p class="year" ng-bind="media[0].Year"></p>
 
             </div>
-            <img ng-src="{{media[0].Picture}}">
+            <img ng-src="{{media[0].Picture}}" alt="Datapoint" title="Datapoint">
             <div class="info slideUp">
-                <p>{{media[0].Description}}</p>
+                <p ng-bind="media[0].Description"</p>
             </div>
             
         </div>
         <div class="pc"id="jaar72">
             <div class="jaartal">
-                <p  class="naam fadeIn">{{media[1].Name}}</p>
-                <p class="year" >{{media[1].Year}}</p>
+                <p  class="naam fadeIn"ng-bind="media[1].Name"></p>
+                <p class="year" ng-bind="media[1].Year"></p>
 
             </div>
-            <img ng-src="{{media[1].Picture}}">
+            <img ng-src="{{media[1].Picture}}" alt="HP 9830" title="HP 9830">
 
             <div id="blad"></div>
             <div class="info slideUp">
-                <p>{{media[1].Description}}</p>
+                <p ng-bind="media[1].Description"</p>
                 <p><h1><a href="#printer">Click to test</a></h1></p>
             </div>
         </div>
@@ -97,39 +97,39 @@
         </div>
         <div class="pc"id="jaar73">
             <div class="jaartal">
-                <p class="naam fadeIn">{{media[2].Name}}</p>
-                <p class="year">{{media[2].Year}}</p>
+                <p  class="naam fadeIn"ng-bind="media[2].Name"></p>
+                <p class="year" ng-bind="media[2].Year"></p>
 
             </div>
-            <img class="autoheight" ng-src="{{media[2].Picture}}">
+            <img class="autoheight" ng-src="{{media[2].Picture}}"alt="Xerox Alto" title="Xerox Alto">
             <div class="info slideUp">
-                <p>{{media[2].Description}}</p>
+                <p ng-bind="media[3].Description"</p>
             </div>
         </div>
         <div class="pc"id="jaar77">
             <div class="jaartal">
-                <p  class="naam fadeIn">{{media[3].Name}}</p>
-                <p class="year">{{media[3].Year}}</p>
+                <p  class="naam fadeIn"ng-bind="media[3].Name"></p>
+                <p class="year" ng-bind="media[3].Year"></p>
 
             </div>
-            <img class="autoheight" ng-src="{{media[3].Picture}}">
+            <img class="autoheight" ng-src="{{media[3].Picture}}" alt="Apple II" title="Apple II">
             <div class="info slideUp">
-                <p>{{media[3].Description}}</p>
+                <p ng-bind="media[3].Description"</p>
             </div>
         </div>
         <div class="pc"id="jaar79">
 
             <div class="jaartal">
-                <p  class="naam fadeIn">{{media[4].Name}}</p>
-                <p class="year">{{media[4].Year}}</p>
+                <p  class="naam fadeIn"ng-bind="media[4].Name"></p>
+                <p class="year" ng-bind="media[4].Year"></p>
 
             </div>
             <!--<img src="Images/pacman.png" id="pacman" draggable="true" ondragstart="drag(event)">!-->
-            <img ng-src="{{media[4].Picture}}">
+            <img ng-src="{{media[4].Picture}}" alt="Atari 400/800" title="Atari 400/800">
 
             <div id="game" ondrop="drop(event)" ondragover="allowDrop(event)"> Drag pacman in here</div>
             <div class="info slideUp">
-                <p>{{media[4].Description}}</p> <img src="Images/pacman.png" id="pacman" draggable="true" ondragstart="drag(event)"><p><h1 class="test"> Drag the casette in the pc to play a game </h1></p>
+                <p ng-bind="media[4].Description"></p> <img src="Images/pacman.png" id="pacman" draggable="true" ondragstart="drag(event)"><p><h1 class="test"> Drag the casette in the pc to play a game </h1></p>
             </div>
         </div>
 
@@ -143,80 +143,80 @@
             </div>
         <div class="pc"id="jaar80">
             <div class="jaartal">
-                <p  class="naam fadeIn">{{media[5].Name}}</p>
-                <p class="year">{{media[5].Year}}</p>
+                <p  class="naam fadeIn"ng-bind="media[5].Name"></p>
+                <p class="year" ng-bind="media[5].Year"></p>
 
             </div>
-            <img ng-src="{{media[5].Picture}}">
+            <img ng-src="{{media[5].Picture}}" alt="Apple III" title="Apple III">
             <div class="info slideUp">
-                <p>{{media[5].Description}}</p>
+                <p ng-bind="media[5].Description"</p>
             </div>
         </div>
         <div class="pc"id="jaar81">
             <div class="jaartal">
-                <p  class="naam fadeIn">{{media[6].Name}}</p>
-                <p class="year">{{media[6].Year}}</p>
+                <p  class="naam fadeIn"ng-bind="media[6].Name"></p>
+                <p class="year" ng-bind="media[6].Year"></p>
 
             </div>
-            <img ng-src="{{media[6].Picture}}">
+            <img ng-src="{{media[6].Picture}}" alt="IBM PC" title="IBM PC">
             <div class="info slideUp">
-                <p>{{media[6].Description}}</p>
+                <p ng-bind="media[6].Description"</p>
             </div>
         </div>
         <div class="pc"id="jaar83">
             <div class="jaartal">
-                <p  class="naam fadeIn">{{media[7].Name}}</p>
-                <p class="year">{{media[7].Year}}</p>
+                <p  class="naam fadeIn"ng-bind="media[7].Name"></p>
+                <p class="year" ng-bind="media[7].Year"></p>
 
             </div>
-            <img ng-src="{{media[7].Picture}}">
+            <img ng-src="{{media[7].Picture}}" alt="Apple Lisa" title="Apple Lisa">
             <div class="info slideUp">
-                <p>{{media[7].Description}}</p>
+                <p ng-bind="media[7].Description"</p>
             </div>
         </div>
         <div class="pc"id="jaar87">
             <div class="jaartal">
-                <p  class="naam fadeIn">{{media[8].Name}}</p>
-                <p class="year">{{media[8].Year}}</p>
+                <p  class="naam fadeIn"ng-bind="media[8].Name"></p>
+                <p class="year" ng-bind="media[8].Year"></p>
 
             </div>
-            <img ng-src="{{media[8].Picture}}">
+            <img ng-src="{{media[8].Picture}}"alt="IBM Personal System 2" title="IBM Personal System 2">
             <div class="info slideUp">
-                <p >{{media[8].Description}}</p>
+                <p ng-bind="media[8].Description"</p>
             </div>
         </div>
         <div class="pc"id="jaar89">
             <div class="jaartal">
-                <p  class="naam fadeIn">{{media[9].Name}}</p>
-                <p  class="year">{{media[9].Year}}</p>
+                <p  class="naam fadeIn"ng-bind="media[9].Name"></p>
+                <p class="year" ng-bind="media[9].Year"></p>
 
             </div>
-            <img ng-src="{{media[9].Picture}}">
+            <img ng-src="{{media[9].Picture}}" alt="Mac Portable" title="Mac Portable">
             <div class="info slideUp">
-                <p >{{media[9].Description}}</p>
+                <p ng-bind="media[9].Description"</p>
             </div>
         </div>
         <div class="pc"id="jaar91">
             <div class="jaartal">
-                <p  class="naam fadeIn">{{media[10].Name}}</p>
-                <p  class="year">{{media[10].Year}}</p>
+                <p  class="naam fadeIn"ng-bind="media[10].Name"></p>
+                <p class="year" ng-bind="media[10].Year"></p>
 
             </div>
-            <img class="autoheight" ng-src="{{media[10].Picture}}">
+            <img class="autoheight" ng-src="{{media[10].Picture}}" alt="Dell 325 NC" title="Dell 325 NC">
             <div class="info slideUp">
-                <p>{{media[10].Description}}</p>
+                <p ng-bind="media[10].Description"</p>
             </div>
         </div>
 
         <div class="pc"id="jaar92">
             <div class="jaartal">
-                <p class="naam fadeIn">{{media[11].Name}}</p>
-                <p  class="year">{{media[11].Year}}</p>
+                <p  class="naam fadeIn"ng-bind="media[11].Name"></p>
+                <p class="year" ng-bind="media[11].Year"></p>
 
             </div>
-            <img ng-src="{{media[11].Picture}}">
+            <img ng-src="{{media[11].Picture}}" alt="Amiga 4000" title="Amiga 4000">
             <div class="info slideUp">
-                <p>{{media[11].Description}}</p>
+                <p ng-bind="media[11].Description"</p>
                 <p><h1 class="test"><a href="#tekstVerwerker">Click here to try the new texteditor</a></h1></p>
             </div>
         </div>
@@ -234,13 +234,13 @@
         </div>
         <div class="pc"id="jaar98">
             <div class="jaartal">
-                <p  class="naam fadeIn">{{media[12].Name}}</p>
-                <p  class="year">{{media[12].Year}}</p>
+                <p  class="naam fadeIn"ng-bind="media[12].Name"></p>
+                <p class="year" ng-bind="media[12].Year"></p>
 
             </div>
-            <img ng-src="{{media[12].Picture}}">
+            <img ng-src="{{media[12].Picture}}" alt="iMac" title="iMac">
             <div class="info slideUp">
-                <p>{{media[12].Description}}</p>
+                <p ng-bind="media[12].Description"</p>
                 <p><h1 class="test"><a href="#google"> Click to try Google, it will change your life for ever!</a></h1></p>
             </div>
         </div>
@@ -250,32 +250,31 @@
             </div>
         <div class="pc"id="jaar06">
             <div class="jaartal">
-                <p  class="naam fadeIn">{{media[13].Name}}</p>
-                <p  class="year">{{media[13].Year}}</p>
+                <p  class="naam fadeIn"ng-bind="media[13].Name"></p>
+                <p class="year" ng-bind="media[13].Year"></p>
 
             </div>
             <img ng-src="{{media[13].Picture}}" alt="Macbook" title="Macbook">
             <div class="info slideUp">
-                <p>{{media[13].Description}}</p>
+                <p ng-bind="media[13].Description"</p>
             </div>
         </div>
         <div class="pc" id="jaar10">
 
             <div class="jaartal">
-                <p  class="naam fadeIn">{{media[14].Name}}</p>
-                <p  class="year">{{media[14].Year}}</p>
+                <p  class="naam fadeIn" ng-bind="media[14].Name"></p>
+                <p  class="year" ng-bind="media[14].Year"></p>
 
             </div>
             <img ng-src="{{media[14].Picture}}" alt="iPad" title="iPad">
             <div id="locatie">
             <img src="Images/map.png" alt="Icon Location" title="Get your location">
-            <p><a href="#map"> Click to show location on iPad</a></p></div>
+            <p><a href="#mapcontainer"> Click to show location on iPad</a></p></div>
             <div class="info slideUp">
-                <p>{{media[14].Description}}</p>
+                <p ng-bind="media[14].Description"</p>
             </div>
         </div>
         <div  class="pc">
-            <div id="hide"></div>
             <div id="map"><article id="article"></article></div>
         </div>
 
@@ -303,11 +302,10 @@
 <!-- Placed at the end of the document so the pages load faster -->
 
     <script src="Scripts/angular.js"></script>
-    <script src="Scripts/angular-route.js"></script>
     <script src="Scripts/jquery-2.1.1.js"></script>
     <script src="Scripts/bootstrap.min.js"></script>
     <script src="Scripts/Media.js"></script>
-    <script src="Src/Controllers/MediaController.js"></script>
+    <script src="Scripts/MediaController.js"></script>
     <script src="Scripts/project.js"></script>
     <script src="Scripts/Pacmans.js"></script>
     <script src="Scripts/Ghost.js"></script>
